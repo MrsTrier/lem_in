@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names -F /Users/mcanhand/Library/Frameworks CMakeFiles/Visualisation_lem_in.dir/main.c.o  -o Visualisation_lem_in -framework SDL2 -framework SDL2_image 
