@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/mcanhand/CLionProjects/Visualisation_lem_in/main.c
-SDL.h
--
-stdio.h
--
-mach/machine.h
--
-SDL_image.h
--
-
 /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h
 /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
@@ -651,4 +641,14 @@ begin_code.h
 /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/begin_code.h
 close_code.h
 /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/close_code.h
+
+/Users/mcanhand/my_lem_in_proj/main.c
+SDL.h
+-
+stdio.h
+-
+mach/machine.h
+-
+SDL_image.h
+-
 

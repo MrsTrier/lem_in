@@ -19,6 +19,8 @@ void close();
 
 SDL_Texture * room_texture = NULL;
 
+SDL_Texture * ant_texture = NULL;
+
 SDL_Texture * background_texture = NULL;
 
 SDL_Renderer * renderer = NULL;
@@ -26,11 +28,11 @@ SDL_Renderer * renderer = NULL;
 //The window we'll be rendering to
 SDL_Window* gWindow = NULL;
 
-//The surface contained by the window
-SDL_Surface* gScreenSurface = NULL;
 
 //The image we will load and show on the screen
 SDL_Surface* background = NULL;
+
+SDL_Surface* ant = NULL;
 
 SDL_Surface* rooms = NULL;
 
@@ -83,6 +85,8 @@ void    init_textures(void)
     renderer = SDL_CreateRenderer(gWindow, -1, 0);
 
     room_texture = SDL_CreateTextureFromSurface(renderer, rooms);
+    background_texture = SDL_CreateTextureFromSurface(renderer, background);
+    ant_texture = SDL_CreateTextureFromSurface(renderer, ant);;
 }
 
 boolean_t   loadMedia()
@@ -94,6 +98,8 @@ boolean_t   loadMedia()
 
     background = IMG_Load("/Users/mcanhand/Downloads/space.png");
     rooms = IMG_Load("/Users/mcanhand/Downloads/room.png");
+    ant = IMG_Load("/Users/mcanhand/Downloads/ant.png");
+
 
     //Load splash image
     if( rooms == NULL )
@@ -168,13 +174,16 @@ int main( int argc, char* args[] )
                 }
 
 
-                background_texture = SDL_CreateTextureFromSurface(renderer, background);
 
                 //Apply the image
-                SDL_Rect dstrect = {150, 105, 130, 200 };
+                SDL_Rect dstrect = {150, 105, 300, 160 };
+                SDL_Rect ant_dstrect = {250, 125, 70, 100};
+
                 SDL_RenderCopy(renderer, background_texture, NULL, NULL);
 
                 SDL_RenderCopy(renderer, room_texture, NULL, &dstrect);
+
+                SDL_RenderCopy(renderer, ant_texture, NULL, &ant_dstrect);
 
                 SDL_RenderPresent(renderer);
 
