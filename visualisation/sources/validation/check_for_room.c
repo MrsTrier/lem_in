@@ -24,6 +24,7 @@ t_room		*create_room(char *line, t_input *data)
 		data->flag &= ~END;
 		data->end_room = 1;
 	}
+	data->rooms_num += 1;
 	free_arr(objs);
 	free(objs);
 	return (room);

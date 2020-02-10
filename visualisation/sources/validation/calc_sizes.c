@@ -1,6 +1,7 @@
 
-# include "visualisation.h"
+# include "visualization.h"
 # include <stdio.h>
+
 
 const int SCREEN_WIDTH = 1940;
 const int SCREEN_HEIGHT = 1080;
@@ -50,7 +51,7 @@ void	calc_rooms_size(int max_x, int max_y, t_sizes *sizes)
 
 	free_space_w = 0;
 	free_space_w = 0;
-	sizes->bounds = 150;
+	sizes->bounds = 10;
 	free_space_w = SCREEN_WIDTH - ((SCREEN_WIDTH - sizes->bounds * 2) / 3);
 	sizes->space_w = ((SCREEN_WIDTH - sizes->bounds * 2) / 3 ) / (max_x - 1);
 	sizes->room_width = free_space_w / max_x;

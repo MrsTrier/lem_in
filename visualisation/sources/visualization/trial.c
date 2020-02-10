@@ -110,48 +110,48 @@ void	terminate()
 	SDL_Quit();
 }
 
-int main (int ac, char **av)
-{
-	bool		quit;
-	SDL_Event	e;
-	t_vis_tools	vs;
-
-	if (!init())
-		error_found(ERR_INIT_SDL);
-	else
-	{
-		if (!loadMedia())
-			printf( "Failed to load media!\n" );
-		else
-		{
-			quit = 0;
-			while (!quit)
-			{
-	            while (SDL_PollEvent(&e) != 0)
-	                if (e.type == SDL_QUIT)
-						quit = 1;
-//	            vs.renderer;
-				SDL_Rect room_dstrect = { 150, 105, 250, 200 };
-				SDL_Rect ant_dstrect = { 150 + 80, 105 + 50, 70, 100 };
-				SDL_RenderCopy(renderer, background_texture, NULL, NULL);
-
-				SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-				SDL_RenderDrawLine(renderer, 620, 800, 300, 240);
-				SDL_RenderDrawLine(renderer, 620 + 1, 800 + 1, 300 + 1, 240 + 1);
-				SDL_RenderDrawLine(renderer, 620 + 2, 800 + 2, 300 + 2, 240 + 2);
-
-				SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-				SDL_RenderCopy(renderer, room_texture, NULL, &room_dstrect);
-				SDL_RenderCopy(renderer, ant_texture, NULL, &ant_dstrect);
-				SDL_RenderPresent(renderer);
-			}
-	    }
-	 }
-	 //Free resources and close SDL
-	 terminate();
-
-	 return 1;
-}
+//int main (int ac, char **av)
+//{
+//	bool		quit;
+//	SDL_Event	e;
+//	t_vis_tools	vs;
+//
+//	if (!init())
+//		error_found(ERR_INIT_SDL);
+//	else
+//	{
+//		if (!loadMedia())
+//			printf( "Failed to load media!\n" );
+//		else
+//		{
+//			quit = 0;
+//			while (!quit)
+//			{
+//	            while (SDL_PollEvent(&e) != 0)
+//	                if (e.type == SDL_QUIT)
+//						quit = 1;
+////	            vs.renderer;
+//				SDL_Rect room_dstrect = { 150, 105, 250, 200 };
+//				SDL_Rect ant_dstrect = { 150 + 80, 105 + 50, 70, 100 };
+//				SDL_RenderCopy(renderer, background_texture, NULL, NULL);
+//
+//				SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
+//				SDL_RenderDrawLine(renderer, 620, 800, 300, 240);
+//				SDL_RenderDrawLine(renderer, 620 + 1, 800 + 1, 300 + 1, 240 + 1);
+//				SDL_RenderDrawLine(renderer, 620 + 2, 800 + 2, 300 + 2, 240 + 2);
+//
+//				SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+//				SDL_RenderCopy(renderer, room_texture, NULL, &room_dstrect);
+//				SDL_RenderCopy(renderer, ant_texture, NULL, &ant_dstrect);
+//				SDL_RenderPresent(renderer);
+//			}
+//	    }
+//	 }
+//	 //Free resources and close SDL
+//	 terminate();
+//
+//	 return 1;
+//}
 
 //include_directories(~/Library/Frameworks/SDL2.framework/Headers)
 //include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)

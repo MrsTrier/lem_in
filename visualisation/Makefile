@@ -42,6 +42,9 @@ VS_SOURCES_LIST = check_for_ant.c\
 				  validation.c\
 				  read_fd.c\
 				  read_validate.c\
+  				  validate_result.c\
+  				  calc_sizes.c\
+
 
 VS_SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(VS_SOURCES_LIST))
 

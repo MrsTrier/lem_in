@@ -48,10 +48,10 @@ RM = /Users/mcanhand/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remov
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mcanhand/visualisation
+CMAKE_SOURCE_DIR = /Users/mcanhand/my_visual/visualisation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mcanhand/visualisation/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mcanhand/my_visual/visualisation/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mcanhand/visualisation/cmake-build-debug/CMakeFiles /Users/mcanhand/visualisation/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles /Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mcanhand/visualisation/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1905,6 +1905,33 @@ libft/is_int.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/libft/is_int.c.s
 .PHONY : libft/is_int.c.s
 
+sources/validation/calc_sizes.o: sources/validation/calc_sizes.c.o
+
+.PHONY : sources/validation/calc_sizes.o
+
+# target to build an object file
+sources/validation/calc_sizes.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o
+.PHONY : sources/validation/calc_sizes.c.o
+
+sources/validation/calc_sizes.i: sources/validation/calc_sizes.c.i
+
+.PHONY : sources/validation/calc_sizes.i
+
+# target to preprocess a source file
+sources/validation/calc_sizes.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.i
+.PHONY : sources/validation/calc_sizes.c.i
+
+sources/validation/calc_sizes.s: sources/validation/calc_sizes.c.s
+
+.PHONY : sources/validation/calc_sizes.s
+
+# target to generate assembly for a file
+sources/validation/calc_sizes.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.s
+.PHONY : sources/validation/calc_sizes.c.s
+
 sources/validation/check_for_ant.o: sources/validation/check_for_ant.c.o
 
 .PHONY : sources/validation/check_for_ant.o
@@ -2094,6 +2121,33 @@ sources/validation/is_objtype.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.s
 .PHONY : sources/validation/is_objtype.c.s
 
+sources/validation/main.o: sources/validation/main.c.o
+
+.PHONY : sources/validation/main.o
+
+# target to build an object file
+sources/validation/main.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/main.c.o
+.PHONY : sources/validation/main.c.o
+
+sources/validation/main.i: sources/validation/main.c.i
+
+.PHONY : sources/validation/main.i
+
+# target to preprocess a source file
+sources/validation/main.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/main.c.i
+.PHONY : sources/validation/main.c.i
+
+sources/validation/main.s: sources/validation/main.c.s
+
+.PHONY : sources/validation/main.s
+
+# target to generate assembly for a file
+sources/validation/main.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/main.c.s
+.PHONY : sources/validation/main.c.s
+
 sources/validation/read_fd.o: sources/validation/read_fd.c.o
 
 .PHONY : sources/validation/read_fd.o
@@ -2255,33 +2309,6 @@ sources/validation/validation.s: sources/validation/validation.c.s
 sources/validation/validation.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/validation.c.s
 .PHONY : sources/validation/validation.c.s
-
-sources/visualization/trial.o: sources/visualization/trial.c.o
-
-.PHONY : sources/visualization/trial.o
-
-# target to build an object file
-sources/visualization/trial.c.o:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.o
-.PHONY : sources/visualization/trial.c.o
-
-sources/visualization/trial.i: sources/visualization/trial.c.i
-
-.PHONY : sources/visualization/trial.i
-
-# target to preprocess a source file
-sources/visualization/trial.c.i:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.i
-.PHONY : sources/visualization/trial.c.i
-
-sources/visualization/trial.s: sources/visualization/trial.c.s
-
-.PHONY : sources/visualization/trial.s
-
-# target to generate assembly for a file
-sources/visualization/trial.c.s:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.s
-.PHONY : sources/visualization/trial.c.s
 
 # Help Target
 help:
@@ -2490,6 +2517,9 @@ help:
 	@echo "... libft/is_int.o"
 	@echo "... libft/is_int.i"
 	@echo "... libft/is_int.s"
+	@echo "... sources/validation/calc_sizes.o"
+	@echo "... sources/validation/calc_sizes.i"
+	@echo "... sources/validation/calc_sizes.s"
 	@echo "... sources/validation/check_for_ant.o"
 	@echo "... sources/validation/check_for_ant.i"
 	@echo "... sources/validation/check_for_ant.s"
@@ -2511,6 +2541,9 @@ help:
 	@echo "... sources/validation/is_objtype.o"
 	@echo "... sources/validation/is_objtype.i"
 	@echo "... sources/validation/is_objtype.s"
+	@echo "... sources/validation/main.o"
+	@echo "... sources/validation/main.i"
+	@echo "... sources/validation/main.s"
 	@echo "... sources/validation/read_fd.o"
 	@echo "... sources/validation/read_fd.i"
 	@echo "... sources/validation/read_fd.s"
@@ -2529,9 +2562,6 @@ help:
 	@echo "... sources/validation/validation.o"
 	@echo "... sources/validation/validation.i"
 	@echo "... sources/validation/validation.s"
-	@echo "... sources/visualization/trial.o"
-	@echo "... sources/visualization/trial.i"
-	@echo "... sources/visualization/trial.s"
 .PHONY : help
 
 
