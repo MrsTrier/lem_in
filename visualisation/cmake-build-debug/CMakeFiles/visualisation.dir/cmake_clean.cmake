@@ -80,6 +80,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/visualisation.dir/sources/validation/save_room.c.o"
   "CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o"
   "CMakeFiles/visualisation.dir/sources/validation/validation.c.o"
+  "CMakeFiles/visualisation.dir/sources/visualization/trial.c.o"
   "visualisation"
   "visualisation.pdb"
 )

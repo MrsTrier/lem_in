@@ -3,8 +3,6 @@
 # include <stdio.h>
 
 
-const int SCREEN_WIDTH = 1940;
-const int SCREEN_HEIGHT = 1080;
 
 void	keep_w_to_h_ratio(t_sizes *sizes)
 {
@@ -32,19 +30,19 @@ void	convert_coords(t_sizes *sizes, t_room *room)
 	int multiplier_x;
 	int multiplier_y;
 
+	multiplier_x = 0;
+	multiplier_y = 0;
 	printf("x: %d\ny: %d\n", room->x, room->y);
-	multiplier_x = (room->x < 0 ? (room->x * (-1)) : room->x);
-	if (!room->x)
-		multiplier_x = 0;
-	multiplier_y = (room->y < 0 ? (room->y * (-1)) : room->y);
-	if (!room->y)
-		multiplier_y = 0;
+	while (sizes->min_x + multiplier_x != room->x)
+		multiplier_x += 1;
+	while (sizes->min_y + multiplier_y != room->y)
+		multiplier_y += 1;
 	room->x = sizes->space_w * multiplier_x + sizes->bounds + sizes->room_width * multiplier_x;
 	room->y = sizes->space_h * multiplier_y + sizes->bounds + sizes->room_hight * multiplier_y;
-	printf("x: %d\ny: %d\n", room->x, room->y);
+	printf("space: %d\nx: %d\ny: %d\n", sizes->space_w, room->x, room->y);
 }
 
-void	calc_rooms_size(int max_x, int max_y, t_sizes *sizes)
+void	calc_rooms_size(t_sizes *sizes)
 {
 	int free_space_w;
 	int free_space_h;
@@ -52,11 +50,14 @@ void	calc_rooms_size(int max_x, int max_y, t_sizes *sizes)
 	free_space_w = 0;
 	free_space_w = 0;
 	sizes->bounds = 10;
-	free_space_w = SCREEN_WIDTH - ((SCREEN_WIDTH - sizes->bounds * 2) / 3);
-	sizes->space_w = ((SCREEN_WIDTH - sizes->bounds * 2) / 3 ) / (max_x - 1);
-	sizes->room_width = free_space_w / max_x;
-	free_space_h = SCREEN_HEIGHT - ((SCREEN_HEIGHT - sizes->bounds * 2) / 3);
-	sizes->space_h = ((SCREEN_HEIGHT - sizes->bounds * 2) / 3 ) / (max_y - 1);
-	sizes->room_hight = free_space_h / max_y;
+	free_space_w = sizes->screen_w - sizes->bounds * 2;
+	sizes->room_width = free_space_w / (sizes->cels_num_w + 1);
+	sizes->space_w = sizes->room_width / 3;
+	sizes->room_width = (free_space_w - (sizes->space_w * sizes->cels_num_w)) / (sizes->cels_num_w + 1);
+
+	free_space_h = sizes->screen_h - sizes->bounds * 2;
+	sizes->room_hight = free_space_h / (sizes->cels_num_h + 1);
+	sizes->space_h = sizes->room_hight / 3;
+	sizes->room_hight = (free_space_h - (sizes->space_h * sizes->cels_num_h)) / (sizes->cels_num_h + 1);
 	keep_w_to_h_ratio(sizes);
 }

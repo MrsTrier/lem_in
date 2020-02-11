@@ -21,7 +21,7 @@ bool	is_room(char *line)
 	res = false;
 	objs = ft_strsplit(line, ' ');
 	objs_num = count_objs(objs);
-	if (objs_num != 3 || ft_strchr(objs[0], '-'))
+	if (objs_num != 3 || ft_strchr(objs[0], '-') || ft_strchr(objs[0], '#'))
 		res = false;
 	else
 	{

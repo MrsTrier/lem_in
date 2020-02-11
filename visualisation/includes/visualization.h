@@ -1,10 +1,14 @@
 #ifndef VISUALIZATION_H
 # define VISUALIZATION_H
-
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <mach/machine.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
+
+//#include <SDL.h>
+//#include <mach/machine.h>
+//#include <SDL_image.h>
+//#include <SDL_ttf.h>
 # include "validation.h"
 # include "errors.h"
 
@@ -59,11 +63,14 @@ typedef struct		s_sizes
 	int				cels_num_w;
 	int 			screen_w;
 	int 			screen_h;
-
+	int				max_y;
+	int				max_x;
+	int				min_y;
+	int				min_x;
 }					t_sizes;
 
 
-void	calc_rooms_size(int max_x, int max_y, t_sizes *sizes);
+void	calc_rooms_size(t_sizes *sizes);
 
 void	convert_coords(t_sizes *sizes, t_room *room);
 

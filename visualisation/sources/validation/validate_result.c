@@ -19,6 +19,12 @@ void	check_params(char *ant_room, t_input *data)
 	free(objs);
 }
 
+void	save_iteration(t_input *data, char *res)
+{
+
+}
+
+
 void	is_res_right(char *res, t_input *data)
 {
 	char		**objs;
@@ -34,6 +40,7 @@ void	is_res_right(char *res, t_input *data)
 			error_found(ERR_INPUT);
 		check_params(ant_room, data);
 		i++;
+		save_iteration(data, res);
 	}
 	free_arr(objs);
 	free(objs);

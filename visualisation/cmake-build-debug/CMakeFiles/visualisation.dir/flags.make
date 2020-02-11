@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/mcanhand/my_visual/visualisation/includes -I/Users/mcanhand/my_visual/visualisation/libft/includes -I/Users/mcanhand/Library/Frameworks/SDL2.framework/Headers -I/Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers -I/Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers 
+C_INCLUDES = -I/Users/mcanhand/my_visual/visualisation/includes -I/Users/mcanhand/my_visual/visualisation/libft/includes 
 
