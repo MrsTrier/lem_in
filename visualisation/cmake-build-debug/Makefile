@@ -2310,33 +2310,6 @@ sources/validation/validation.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/validation.c.s
 .PHONY : sources/validation/validation.c.s
 
-sources/visualization/trial.o: sources/visualization/trial.c.o
-
-.PHONY : sources/visualization/trial.o
-
-# target to build an object file
-sources/visualization/trial.c.o:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.o
-.PHONY : sources/visualization/trial.c.o
-
-sources/visualization/trial.i: sources/visualization/trial.c.i
-
-.PHONY : sources/visualization/trial.i
-
-# target to preprocess a source file
-sources/visualization/trial.c.i:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.i
-.PHONY : sources/visualization/trial.c.i
-
-sources/visualization/trial.s: sources/visualization/trial.c.s
-
-.PHONY : sources/visualization/trial.s
-
-# target to generate assembly for a file
-sources/visualization/trial.c.s:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/visualization/trial.c.s
-.PHONY : sources/visualization/trial.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2589,9 +2562,6 @@ help:
 	@echo "... sources/validation/validation.o"
 	@echo "... sources/validation/validation.i"
 	@echo "... sources/validation/validation.s"
-	@echo "... sources/visualization/trial.o"
-	@echo "... sources/visualization/trial.i"
-	@echo "... sources/visualization/trial.s"
 .PHONY : help
 
 

@@ -102,17 +102,44 @@ void	display_links(t_input data, t_sizes *sizes)
 
 void	display_rooms(t_input data, t_sizes *sizes)
 {
-    while (data.room != NULL)
+	while (data.room != NULL)
 	{
 		SDL_Rect room_dstrect = { data.room->x, data.room->y, sizes->room_width, sizes->room_hight};
 		SDL_RenderCopy(renderer, room_texture, NULL, &room_dstrect);
 		data.room = data.room->next;
 	}
-//	SDL_Rect ant_dstrect = { 150 + 80, 105 + 50, 70, 100 };
-//	SDL_RenderCopy(renderer, ant_texture, NULL, &ant_dstrect);
-	SDL_RenderPresent(renderer);
-
 }
+
+t_iteration		*find_iter(t_input *input, int index)
+{
+	t_iteration	*current;
+
+	current = input->iteration;
+	while (current)
+	{
+		if (current->index == index)
+		    return (current);
+		current = current->next;
+	}
+	return (NULL);
+}
+
+void	display_ants(t_input *data, int index)
+{
+	t_ant		*ant;
+	t_iteration	*iter;
+
+	iter = find_iter(data, index);
+	while (iter->ant != NULL)
+	{
+		ant = iter->ant;
+		SDL_Rect ant_dstrect = { ant->room->x + 80, ant->room->y + 50, 70, 100 };
+		SDL_RenderCopy(renderer, ant_texture, NULL, &ant_dstrect);
+		iter->ant = iter->ant->next;
+	}
+	SDL_RenderPresent(renderer);
+}
+
 
 void	placerooms(t_input data, t_sizes *sizes)
 {
@@ -149,7 +176,7 @@ bool	init()
 	else
 	{
 		gWindow = SDL_CreateWindow("Lem-in", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-								   SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+									 SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 		if (gWindow == NULL)
 		{
 			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -161,7 +188,7 @@ bool	init()
 	return success;
 }
 
-void     init_textures(void)
+void	 init_textures(void)
 {
 	renderer = SDL_CreateRenderer(gWindow, -1, 0);
 	room_texture = SDL_CreateTextureFromSurface(renderer, rooms);
@@ -197,8 +224,8 @@ void	terminate()
 	background = NULL;
 	SDL_FreeSurface(rooms);
 	rooms = NULL;
+    SDL_DestroyTexture(ant_texture);
 	SDL_DestroyTexture(room_texture);
-	SDL_DestroyTexture(ant_texture);
 	SDL_DestroyTexture(background_texture);
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(gWindow);
@@ -210,9 +237,11 @@ void	animate_sollution(t_input data)
 {
 	bool		quit;
 	SDL_Event	e;
-	t_sizes	sizes;
+	t_sizes		sizes;
+	int			i;
 //	t_vis_tools	vs;
 
+	i = 0;
 	if (!init())
 		error_found(ERR_INIT_SDL);
 	else
@@ -225,20 +254,18 @@ void	animate_sollution(t_input data)
 			placerooms(data, &sizes);
 			while (!quit)
 			{
-	            while (SDL_PollEvent(&e) != 0)
-                {
-	            	if (e.type == SDL_QUIT)
-					quit = 1;
-                }
-	            display_links(data, &sizes);
+				while (SDL_PollEvent(&e) != 0)
+					if (e.type == SDL_QUIT)
+						quit = 1;
+				display_links(data, &sizes);
 				display_rooms(data, &sizes);
-				display_ants(data, &sizes);
-                SDL_Delay(1000 / 60);
-
-            }
-	    }
-	 }
-	 terminate();
+				display_ants(&data, i);
+				SDL_Delay(1000 / 60);
+				i++;
+			}
+		}
+	}
+	terminate();
 }
 
 int			main(void)

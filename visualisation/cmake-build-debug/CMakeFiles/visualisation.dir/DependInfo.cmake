@@ -85,7 +85,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mcanhand/my_visual/visualisation/sources/validation/save_room.c" "/Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles/visualisation.dir/sources/validation/save_room.c.o"
   "/Users/mcanhand/my_visual/visualisation/sources/validation/validate_result.c" "/Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o"
   "/Users/mcanhand/my_visual/visualisation/sources/validation/validation.c" "/Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles/visualisation.dir/sources/validation/validation.c.o"
-  "/Users/mcanhand/my_visual/visualisation/sources/visualization/trial.c" "/Users/mcanhand/my_visual/visualisation/cmake-build-debug/CMakeFiles/visualisation.dir/sources/visualization/trial.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -93,6 +92,9 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../includes"
   "../libft/includes"
+  "/Users/mcanhand/Library/Frameworks/SDL2.framework/Headers"
+  "/Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers"
+  "/Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers"
   )
 
 # Targets to which this target links.

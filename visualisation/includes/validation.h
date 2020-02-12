@@ -22,22 +22,6 @@ typedef enum
 	LAST
 }	t_type;
 
-
-typedef struct		s_ant
-{
-    int				*ant_index;
-    t_type			type;
-    struct s_room	*room;
-}					t_ant;
-
-
-typedef struct			s_iteration
-{
-	int					ants_num;
-	t_ant				*ant;
-	struct s_iteration	*next;
-}						t_iteration;
-
 typedef struct		s_room
 {
 	char			*name;
@@ -49,6 +33,22 @@ typedef struct		s_room
 	int				ant_number;
 	struct s_room	*next;
 }					t_room;
+
+typedef struct		s_ant
+{
+    int				ant_index;
+    t_type			type;
+    t_room			*room;
+    struct s_ant	*next;
+}					t_ant;
+
+typedef struct			s_iteration
+{
+    int					index;
+    int					ants_num;
+    t_ant				*ant;
+    struct s_iteration	*next;
+}						t_iteration;
 
 typedef struct		s_link
 {

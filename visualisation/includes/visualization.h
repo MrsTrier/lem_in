@@ -1,14 +1,14 @@
 #ifndef VISUALIZATION_H
 # define VISUALIZATION_H
-#include <SDL2/SDL.h>
-#include <mach/machine.h>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_ttf.h>
-
-//#include <SDL.h>
+//#include <SDL2/SDL.h>
 //#include <mach/machine.h>
-//#include <SDL_image.h>
-//#include <SDL_ttf.h>
+//#include <SDL2/SDL_image.h>
+//#include <SDL2/SDL_ttf.h>
+
+#include <SDL.h>
+#include <mach/machine.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
 # include "validation.h"
 # include "errors.h"
 

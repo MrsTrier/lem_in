@@ -688,12 +688,6 @@ begin_code.h
 close_code.h
 /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/close_code.h
 
-/Users/mcanhand/my_visual/visualisation/sources/validation/calc_sizes.c
-visualization.h
-/Users/mcanhand/my_visual/visualisation/sources/validation/visualization.h
-stdio.h
--
-
 /Users/mcanhand/my_visual/visualisation/sources/validation/main.c
 validation.h
 /Users/mcanhand/my_visual/visualisation/sources/validation/validation.h
