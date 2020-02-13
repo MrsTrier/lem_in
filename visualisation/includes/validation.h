@@ -112,8 +112,12 @@ void				save_link(t_link **linklst, t_link *new_link);
  * validation.c
  */
 bool				room_exists(t_room *roomlst, char *name);
-t_room				*find_room(t_input *input, char *name);
 bool				duplicated_coords(t_room *roomlst, int x, int y);
+
+/*
+ * find_room.c
+ */
+t_room				*find_room(t_input *input, char *name);
 
 /*
  * check_for_ant.c

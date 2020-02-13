@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/mcanhand/my_lem_in_proj/main.c" "/Users/mcanhand/my_lem_in_proj/cmake-build-debug/CMakeFiles/Visualisation_lem_in.dir/main.c.o"
+  "/Users/romancheremin/Desktop/dasha/lem_in/main.c" "/Users/romancheremin/Desktop/dasha/lem_in/cmake-build-debug/CMakeFiles/Visualisation_lem_in.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/Users/mcanhand/Library/Frameworks/SDL2.framework/Headers"
-  "/Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers"
+  "/Users/romancheremin/Library/Frameworks/SDL2.framework/Headers"
+  "/Users/romancheremin/Library/Frameworks/SDL2_image.framework/Headers"
   )
 
 # Targets to which this target links.
