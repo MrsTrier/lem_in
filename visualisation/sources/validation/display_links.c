@@ -10,7 +10,7 @@ void	display_links(t_input data, t_sizes *sizes, t_vis_tools *vs)
 	int	end_x;
 	int	end_y;
 
-	SDL_RenderCopy(vs->renderer, background_texture, NULL, NULL);
+	SDL_RenderCopy(vs->renderer, vs->background_texture, NULL, NULL);
 	while (data.link != NULL)
 	{
 		start_x = data.link->start->x + sizes->room_width / 2;

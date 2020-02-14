@@ -2040,6 +2040,168 @@ sources/validation/check_for_type.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.s
 .PHONY : sources/validation/check_for_type.c.s
 
+sources/validation/display_ants.o: sources/validation/display_ants.c.o
+
+.PHONY : sources/validation/display_ants.o
+
+# target to build an object file
+sources/validation/display_ants.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o
+.PHONY : sources/validation/display_ants.c.o
+
+sources/validation/display_ants.i: sources/validation/display_ants.c.i
+
+.PHONY : sources/validation/display_ants.i
+
+# target to preprocess a source file
+sources/validation/display_ants.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_ants.c.i
+.PHONY : sources/validation/display_ants.c.i
+
+sources/validation/display_ants.s: sources/validation/display_ants.c.s
+
+.PHONY : sources/validation/display_ants.s
+
+# target to generate assembly for a file
+sources/validation/display_ants.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_ants.c.s
+.PHONY : sources/validation/display_ants.c.s
+
+sources/validation/display_links.o: sources/validation/display_links.c.o
+
+.PHONY : sources/validation/display_links.o
+
+# target to build an object file
+sources/validation/display_links.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.o
+.PHONY : sources/validation/display_links.c.o
+
+sources/validation/display_links.i: sources/validation/display_links.c.i
+
+.PHONY : sources/validation/display_links.i
+
+# target to preprocess a source file
+sources/validation/display_links.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.i
+.PHONY : sources/validation/display_links.c.i
+
+sources/validation/display_links.s: sources/validation/display_links.c.s
+
+.PHONY : sources/validation/display_links.s
+
+# target to generate assembly for a file
+sources/validation/display_links.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.s
+.PHONY : sources/validation/display_links.c.s
+
+sources/validation/display_rooms.o: sources/validation/display_rooms.c.o
+
+.PHONY : sources/validation/display_rooms.o
+
+# target to build an object file
+sources/validation/display_rooms.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o
+.PHONY : sources/validation/display_rooms.c.o
+
+sources/validation/display_rooms.i: sources/validation/display_rooms.c.i
+
+.PHONY : sources/validation/display_rooms.i
+
+# target to preprocess a source file
+sources/validation/display_rooms.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.i
+.PHONY : sources/validation/display_rooms.c.i
+
+sources/validation/display_rooms.s: sources/validation/display_rooms.c.s
+
+.PHONY : sources/validation/display_rooms.s
+
+# target to generate assembly for a file
+sources/validation/display_rooms.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.s
+.PHONY : sources/validation/display_rooms.c.s
+
+sources/validation/find_cels_num.o: sources/validation/find_cels_num.c.o
+
+.PHONY : sources/validation/find_cels_num.o
+
+# target to build an object file
+sources/validation/find_cels_num.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o
+.PHONY : sources/validation/find_cels_num.c.o
+
+sources/validation/find_cels_num.i: sources/validation/find_cels_num.c.i
+
+.PHONY : sources/validation/find_cels_num.i
+
+# target to preprocess a source file
+sources/validation/find_cels_num.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.i
+.PHONY : sources/validation/find_cels_num.c.i
+
+sources/validation/find_cels_num.s: sources/validation/find_cels_num.c.s
+
+.PHONY : sources/validation/find_cels_num.s
+
+# target to generate assembly for a file
+sources/validation/find_cels_num.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.s
+.PHONY : sources/validation/find_cels_num.c.s
+
+sources/validation/find_iter.o: sources/validation/find_iter.c.o
+
+.PHONY : sources/validation/find_iter.o
+
+# target to build an object file
+sources/validation/find_iter.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o
+.PHONY : sources/validation/find_iter.c.o
+
+sources/validation/find_iter.i: sources/validation/find_iter.c.i
+
+.PHONY : sources/validation/find_iter.i
+
+# target to preprocess a source file
+sources/validation/find_iter.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_iter.c.i
+.PHONY : sources/validation/find_iter.c.i
+
+sources/validation/find_iter.s: sources/validation/find_iter.c.s
+
+.PHONY : sources/validation/find_iter.s
+
+# target to generate assembly for a file
+sources/validation/find_iter.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_iter.c.s
+.PHONY : sources/validation/find_iter.c.s
+
+sources/validation/find_room.o: sources/validation/find_room.c.o
+
+.PHONY : sources/validation/find_room.o
+
+# target to build an object file
+sources/validation/find_room.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_room.c.o
+.PHONY : sources/validation/find_room.c.o
+
+sources/validation/find_room.i: sources/validation/find_room.c.i
+
+.PHONY : sources/validation/find_room.i
+
+# target to preprocess a source file
+sources/validation/find_room.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_room.c.i
+.PHONY : sources/validation/find_room.c.i
+
+sources/validation/find_room.s: sources/validation/find_room.c.s
+
+.PHONY : sources/validation/find_room.s
+
+# target to generate assembly for a file
+sources/validation/find_room.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/find_room.c.s
+.PHONY : sources/validation/find_room.c.s
+
 sources/validation/free_funcs.o: sources/validation/free_funcs.c.o
 
 .PHONY : sources/validation/free_funcs.o
@@ -2093,6 +2255,60 @@ sources/validation/helper.s: sources/validation/helper.c.s
 sources/validation/helper.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/helper.c.s
 .PHONY : sources/validation/helper.c.s
+
+sources/validation/init_sdl.o: sources/validation/init_sdl.c.o
+
+.PHONY : sources/validation/init_sdl.o
+
+# target to build an object file
+sources/validation/init_sdl.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o
+.PHONY : sources/validation/init_sdl.c.o
+
+sources/validation/init_sdl.i: sources/validation/init_sdl.c.i
+
+.PHONY : sources/validation/init_sdl.i
+
+# target to preprocess a source file
+sources/validation/init_sdl.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.i
+.PHONY : sources/validation/init_sdl.c.i
+
+sources/validation/init_sdl.s: sources/validation/init_sdl.c.s
+
+.PHONY : sources/validation/init_sdl.s
+
+# target to generate assembly for a file
+sources/validation/init_sdl.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.s
+.PHONY : sources/validation/init_sdl.c.s
+
+sources/validation/init_srfcandtxtrs.o: sources/validation/init_srfcandtxtrs.c.o
+
+.PHONY : sources/validation/init_srfcandtxtrs.o
+
+# target to build an object file
+sources/validation/init_srfcandtxtrs.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o
+.PHONY : sources/validation/init_srfcandtxtrs.c.o
+
+sources/validation/init_srfcandtxtrs.i: sources/validation/init_srfcandtxtrs.c.i
+
+.PHONY : sources/validation/init_srfcandtxtrs.i
+
+# target to preprocess a source file
+sources/validation/init_srfcandtxtrs.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.i
+.PHONY : sources/validation/init_srfcandtxtrs.c.i
+
+sources/validation/init_srfcandtxtrs.s: sources/validation/init_srfcandtxtrs.c.s
+
+.PHONY : sources/validation/init_srfcandtxtrs.s
+
+# target to generate assembly for a file
+sources/validation/init_srfcandtxtrs.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.s
+.PHONY : sources/validation/init_srfcandtxtrs.c.s
 
 sources/validation/is_objtype.o: sources/validation/is_objtype.c.o
 
@@ -2532,12 +2748,36 @@ help:
 	@echo "... sources/validation/check_for_type.o"
 	@echo "... sources/validation/check_for_type.i"
 	@echo "... sources/validation/check_for_type.s"
+	@echo "... sources/validation/display_ants.o"
+	@echo "... sources/validation/display_ants.i"
+	@echo "... sources/validation/display_ants.s"
+	@echo "... sources/validation/display_links.o"
+	@echo "... sources/validation/display_links.i"
+	@echo "... sources/validation/display_links.s"
+	@echo "... sources/validation/display_rooms.o"
+	@echo "... sources/validation/display_rooms.i"
+	@echo "... sources/validation/display_rooms.s"
+	@echo "... sources/validation/find_cels_num.o"
+	@echo "... sources/validation/find_cels_num.i"
+	@echo "... sources/validation/find_cels_num.s"
+	@echo "... sources/validation/find_iter.o"
+	@echo "... sources/validation/find_iter.i"
+	@echo "... sources/validation/find_iter.s"
+	@echo "... sources/validation/find_room.o"
+	@echo "... sources/validation/find_room.i"
+	@echo "... sources/validation/find_room.s"
 	@echo "... sources/validation/free_funcs.o"
 	@echo "... sources/validation/free_funcs.i"
 	@echo "... sources/validation/free_funcs.s"
 	@echo "... sources/validation/helper.o"
 	@echo "... sources/validation/helper.i"
 	@echo "... sources/validation/helper.s"
+	@echo "... sources/validation/init_sdl.o"
+	@echo "... sources/validation/init_sdl.i"
+	@echo "... sources/validation/init_sdl.s"
+	@echo "... sources/validation/init_srfcandtxtrs.o"
+	@echo "... sources/validation/init_srfcandtxtrs.i"
+	@echo "... sources/validation/init_srfcandtxtrs.s"
 	@echo "... sources/validation/is_objtype.o"
 	@echo "... sources/validation/is_objtype.i"
 	@echo "... sources/validation/is_objtype.s"

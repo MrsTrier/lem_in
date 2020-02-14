@@ -1,13 +1,13 @@
 #ifndef VALIDATION_H
 # define VALIDATION_H
 
-# define ANT (1 << 0)
-# define ROOMS (1 << 1)
-# define START (1 << 2)
-# define END (1 << 3)
-# define LINK (1 << 4)
-# define START_ROOM (1 << 5)
-# define END_ROOM (1 << 6)
+# define			ANT (1 << 0)
+# define			ROOMS (1 << 1)
+# define			START (1 << 2)
+# define			END (1 << 3)
+# define			LINK (1 << 4)
+# define			START_ROOM (1 << 5)
+# define			END_ROOM (1 << 6)
 
 
 # include "libft.h"
@@ -42,13 +42,13 @@ typedef struct		s_ant
     struct s_ant	*next;
 }					t_ant;
 
-typedef struct			s_iteration
+typedef struct		s_iter
 {
-    int					index;
-    int					ants_num;
-    t_ant				*ant;
-    struct s_iteration	*next;
-}						t_iteration;
+    int				index;
+    int				ants_num;
+    t_ant			*ant;
+    struct s_iter	*next;
+}					t_iteration;
 
 typedef struct		s_link
 {
@@ -132,12 +132,12 @@ void				check_for_type(char *input, t_input *data);
 /*
  * check_for_room.c
  */
-void				check_for_room(char *input, t_input *data);
+void				check_for_room(char *input, t_input *data, char ***objs);
 
 /*
  * check_for_link.c
  */
-void				check_for_link(char *input, t_input *data);
+void				check_for_link(char *input, t_input *data, char ***objs);
 
 /*
  * read_fd.c

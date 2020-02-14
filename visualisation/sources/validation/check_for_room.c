@@ -1,17 +1,16 @@
 # include "validation.h"
 # include "errors.h"
 
-t_room		*create_room(char *line, t_input *data)
+t_room		*create_room(char *line, t_input *data, char ***objs)
 {
 	t_room	*room;
-	char	**objs;
 
-	objs = ft_strsplit(line, ' ');
+	*objs = ft_strsplit(line, ' ');
 	room = (t_room *)malloc(sizeof(t_room));
 	room->next = NULL;
-	room->name = ft_strdup(objs[0]);
-	room->x = ft_atoi(objs[1]);
-	room->y = ft_atoi(objs[2]);
+	room->name = ft_strdup((*objs)[0]);
+	room->x = ft_atoi((*objs)[1]);
+	room->y = ft_atoi((*objs)[2]);
 	if (data->flag & START)
 	{
 		room->type = FIRST;
@@ -25,12 +24,10 @@ t_room		*create_room(char *line, t_input *data)
 		data->end_room = 1;
 	}
 	data->rooms_num += 1;
-	free_arr(objs);
-	free(objs);
 	return (room);
 }
 
-void	check_for_room(char *input, t_input *data)
+void	check_for_room(char *input, t_input *data, char ***objs)
 {
 	uint8_t	flag;
 	t_room	*room;
@@ -38,7 +35,7 @@ void	check_for_room(char *input, t_input *data)
 	flag = data->flag;
 	if ((flag & ANT) && !(flag & LINK))
 	{
-		room = create_room(input, data);
+		room = create_room(input, data, objs);
 		if (room_exists(data->room, room->name))
 			error_found(ERR_ROOM_NAME_DUP);
 		if (duplicated_coords(data->room, room->x, room->y))

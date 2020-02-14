@@ -11,7 +11,7 @@ void	 init_textures(t_vis_tools *vs)
 	vs->ant_texture = SDL_CreateTextureFromSurface(vs->renderer, vs->ant);
 }
 
-bool	int_surface(t_vis_tools *vs)
+bool	init_surface(t_vis_tools *vs)
 {
 	boolean_t	success;
 
@@ -19,12 +19,12 @@ bool	int_surface(t_vis_tools *vs)
 	vs->background = IMG_Load("/Users/mcanhand/Downloads/space.jpg");
 	vs->rooms = IMG_Load("/Users/mcanhand/Downloads/room.png");
 	vs->ant = IMG_Load("/Users/mcanhand/Downloads/ant.png");
-	if (rooms == NULL)
+	if (vs->rooms == NULL)
 	{
 		printf("Unable to load image %s! SDL Error: %s\n", "03_event_driven_programming/x.bmp", SDL_GetError());
 		success = false;
 	}
-	if (background == NULL)
+	if (vs->background == NULL)
 	{
 		printf("Unable to load image %s! SDL Error: %s\n", "03_event_driven_programming/x.bmp", SDL_GetError());
 		success = false;

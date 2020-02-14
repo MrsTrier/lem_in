@@ -318,10 +318,34 @@
 		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/check_for_type.c">
 			<Option target="visualisation"/>
 		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_ants.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_links.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_rooms.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_cels_num.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_iter.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_room.c">
+			<Option target="visualisation"/>
+		</Unit>
 		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/free_funcs.c">
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/helper.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/init_sdl.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/init_srfcandtxtrs.c">
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/is_objtype.c">

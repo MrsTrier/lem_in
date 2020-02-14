@@ -16,14 +16,21 @@
 
 void	check_for_errors(char *input, char obj, t_input *data)
 {
+	char	**objs;
+
 	if (obj == 't')
 		check_for_type(input, data);
 	else if (obj == 'a')
 		check_for_ant(input, data);
-	else if (obj == 'r')
-		check_for_room(input, data);
-	else if (obj == 'l')
-		check_for_link(input, data);
+	else
+	{
+		if (obj == 'r')
+			check_for_room(input, data, &objs);
+		if (obj == 'l')
+			check_for_link(input, data, &objs);
+		free_arr(objs);
+		free(objs);
+	}
 }
 
 void		initialize_vars(t_input *input, int *i, char ***objs, char *line)
@@ -81,8 +88,9 @@ void	split_input(char **map, char **res)
 	int i;
 
 	i = 0;
-	while ((!(((*map)[i] == '\n') && ((*map)[i + 1]) == '\n')) && (*map)[i + 2] != '\0')
-		i++;
+	if (ft_strlen(*map) >= 3)
+		while ((!(((*map)[i] == '\n') && ((*map)[i + 1]) == '\n')) && (*map)[i + 2] != '\0')
+			i++;
 	(*map)[i + 1] = '\0';
 	*res = (*map) + i + 2;
 	if ((*res)[0] != 'L')
@@ -94,8 +102,13 @@ void	read_validate(char **res, t_input *data)
 	char *map;
 
 	map = read_fd(0);
-	split_input(&map, res);
-	validate_read(map, data);
-	validate_result(*res, data);
-	free(map);
+	if (map != NULL)
+	{
+		split_input(&map, res);
+		validate_read(map, data);
+		validate_result(*res, data);
+		free(map);
+	}
+	else
+		error_found(ERR_INPUT);
 }

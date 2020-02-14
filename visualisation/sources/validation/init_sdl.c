@@ -17,10 +17,12 @@ bool	init_sdl_images()
 	return success;
 }
 
-bool	init(t_vis_tools *vs)
+bool	init(t_vis_tools *vs, t_sizes *sizes)
 {
 	bool	success;
 
+    sizes->screen_h = 1080;
+    sizes->screen_w = 1940;
 	success = true;
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
@@ -30,7 +32,7 @@ bool	init(t_vis_tools *vs)
 	else
 	{
 		vs->window = SDL_CreateWindow("Lem-in", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-									  SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+                                      sizes->screen_w, sizes->screen_h, SDL_WINDOW_SHOWN);
 		if (vs->window == NULL)
 		{
 			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());

@@ -57,10 +57,9 @@ bool	link_exists(t_link *linklst, t_link *new_link)
 	return (false);
 }
 
-void	check_for_link(char *input, t_input *data)
+void	check_for_link(char *input, t_input *data, char ***objs)
 {
 	t_link	*link;
-	char	**objs;
 	t_room	*start;
 	t_room	*end;
 
@@ -71,9 +70,9 @@ void	check_for_link(char *input, t_input *data)
 			error_found(ERR_LINK_WITH_NO_ROOM);
 		else
 		{
-			objs = ft_strsplit(input, '-');
-			start = find_room(data, objs[0]);
-			end = find_room(data, objs[1]);
+			*objs = ft_strsplit(input, '-');
+			start = find_room(data, (*objs)[0]);
+			end = find_room(data, (*objs)[1]);
 			link = create_link(start, end);
 			if (link_exists(data->link, link))
 				error_found(ERR_LINK_DUP);

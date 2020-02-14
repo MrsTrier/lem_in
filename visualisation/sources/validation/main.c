@@ -1,89 +1,82 @@
 
 # include "validation.h"
 # include "errors.h"
-# include <stdio.h>
 # include "visualization.h"
 
-const int SCREEN_WIDTH = 1940;
-const int SCREEN_HEIGHT = 1080;
-
-void	rects_for_room(t_input data, t_sizes *sizes)
+t_vis_tools		*create_vs(void)
 {
-	while (data.room != NULL)
-	{
-		convert_coords(sizes, data.room);
-		data.room = data.room->next;
-	}
+	t_vis_tools	*vs;
+
+	if (!(vs = (t_vis_tools *)ft_memalloc(sizeof(t_vis_tools))))
+		error_found(ERR_VS_INIT);
+	vs->window = NULL;
+	vs->renderer = NULL;
+	vs->font = NULL;
+	vs->bg = NULL;
+	vs->bg_dims = NULL;
+	vs->lem_in = NULL;
+	vs->room_start_end = NULL;
+	vs->room_middle = NULL;
+	vs->ant = NULL;
+	vs->next = NULL;
+	vs->welcome = true;
+	vs->close = false;
+	vs->ants_is_moving = false;
+//	vs->x_shift = 0;
+//	vs->y_shift = 0;
+	return (vs);
 }
 
-void	placerooms(t_input data, t_sizes *sizes)
-{
-	sizes->screen_h = 1080;
-	sizes->screen_w = 1940;
-	find_cels_num(sizes, data);
-	calc_rooms_size(sizes);
-	rects_for_room(data, sizes);
-}
-
-void	terminate(t_vis_tools *vs)
+void	free_surface(t_vis_tools *vs)
 {
 	SDL_FreeSurface(vs->background);
 	vs->background = NULL;
 	SDL_FreeSurface(vs->rooms);
 	vs->rooms = NULL;
-    SDL_DestroyTexture(vs->ant_texture);
-	SDL_DestroyTexture(vs->room_texture);
-	SDL_DestroyTexture(vs->background_texture);
-	SDL_DestroyRenderer(vs->renderer);
-	SDL_DestroyWindow(vs->window);
-	vs->window = NULL;
-	SDL_Quit();
+	SDL_FreeSurface(vs->ant);
+	vs->ant = NULL;
 }
 
-void	animate_sollution(t_input data)
+void	free_vs(t_vis_tools **vs)
 {
-	bool		quit;
-	SDL_Event	e;
-	t_sizes		sizes;
-	int			i;
-	t_vis_tools	vs;
-
-	i = 0;
-	if (!init(&vs))
-		error_found(ERR_INIT_SDL);
-	else
+	if (vs && *vs)
 	{
-		if (!init_surface(&vs))
-			printf("Failed to load media!\n");
-		else
-		{
-			quit = 0;
-			placerooms(data, &sizes);
-			while (!quit)
-			{
-				while (SDL_PollEvent(&e) != 0)
-					if (e.type == SDL_QUIT)
-						quit = 1;
-				display_links(data, &sizes);
-				display_rooms(data, &sizes);
-				display_ants(&data, i);
-				SDL_Delay(1000 / 60);
-				i++;
-			}
-		}
+		free_surface(*vs);
+		DESTROY_TXTR((*vs)->next);
+		DESTROY_TXTR((*vs)->ant_texture);
+		DESTROY_TXTR((*vs)->background_texture);
+		DESTROY_TXTR((*vs)->room_texture);
+		DESTROY_TXTR((*vs)->room_middle);
+		DESTROY_TXTR((*vs)->room_start_end);
+//		DESTROY_TXTR((*vs)->lem_in);
+//		DESTROY_TXTR((*vs)->bg);
+		TTF_CloseFont((*vs)->font);
+		if ((*vs)->renderer)
+			SDL_DestroyRenderer((*vs)->renderer);
+		if ((*vs)->window)
+			SDL_DestroyWindow((*vs)->window);
+		TTF_Quit();
+		IMG_Quit();
+		SDL_Quit();
+		free((*vs));
+		(*vs) = NULL;
 	}
-	terminate();
 }
 
-int			main(void)
+int			main(int ac, char **av)
 {
-	char *res;
+	char		*res;
 	t_input		data;
+	t_vis_tools	*vs;
 
-	read_validate(&res, &data);
-	animate_sollution(data);
-
-	free_room(&data);
-	free_links(&data);
+	if (ac == 1)
+	{
+		vs = create_vs();
+		read_validate(&res, &data);
+		animate_solution(data, vs);
+		free_vs(&vs);
+		free_room(&data);
+		free_links(&data);
+	}
 	return (0);
 }
