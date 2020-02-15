@@ -106,7 +106,8 @@ add_executable(my_visual
     visualisation/sources/validation/validate_result.c
     visualisation/sources/validation/validation.c
     visualisation/sources/validation/animate_solution.c
-    visualisation/sources/validation/calc_additional_metrics.c)
+    visualisation/sources/validation/calc_additional_metrics.c
+    visualisation/sources/validation/save_iter.c)
 
 target_link_libraries(my_visual "-framework SDL2")
 target_link_libraries(my_visual "-framework SDL2_image")

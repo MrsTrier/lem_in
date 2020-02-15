@@ -19,34 +19,6 @@ void	check_params(char *ant_room, t_input *data)
 	free(objs);
 }
 
-void		save_iteration(t_iteration **iter, t_iteration *new_iter)
-{
-	t_iteration	**head;
-	t_iteration	*pr;
-
-	pr = *iter;
-	head = iter;
-	if (*head)
-	{
-		while (pr->next != NULL)
-		{
-			pr = pr->next;
-			new_iter->index += 1;
-		}
-	}
-	if (!*head)
-	{
-		*head = new_iter;
-		(*head)->next = NULL;
-	}
-	else
-	{
-		pr->next = new_iter;
-		new_iter->index += 1;
-        pr->next->next = NULL;
-	}
-}
-
 void	push_new_ant(t_iteration **iter, t_ant *ant)
 {
     t_iteration **head;
@@ -121,6 +93,39 @@ void	is_res_right(char *res, t_input *data)
 	free(objs);
 }
 
+//void	adit_ant(t_iteration **iter, t_input *data)//нужно сохранять комнату откуда муравей перебегает
+//{
+//	t_iteration	**head;
+//	t_iteration	*pr;
+//	t_room		*prev_room;
+//
+//	pr = *iter;
+//	head = iter;
+//	if (*head)
+//	{
+//		while (pr->next != NULL)
+//		{
+//			if (!pr->index)
+//				pr->ant->st_room = find_room(data, data->st_room);
+//			else
+//				{}
+//			prev_room = pr->ant
+//			pr = pr->next;
+//		}
+//	}
+//	if (!*head)
+//	{
+//		*head = new_iter;
+//		(*head)->next = NULL;
+//	}
+//	else
+//	{
+//		pr->next = new_iter;
+//		new_iter->index += 1;
+//		pr->next->next = NULL;
+//	}
+//}
+
 void	validate_result(char *res, t_input *data)
 {
 	char		**objs;
@@ -134,6 +139,8 @@ void	validate_result(char *res, t_input *data)
 		is_res_right(objs[i], data);
 		iter = create_iteration(data, objs[i]);
 		save_iteration(&(data->iteration), iter);
+//		adit_ant(&(data->iteration), data);
+		data->iter_num += 1;
 		i++;
     }
 	free_arr(objs);

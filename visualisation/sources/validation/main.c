@@ -35,6 +35,8 @@ void	free_surface(t_vis_tools *vs)
 	vs->rooms = NULL;
 	SDL_FreeSurface(vs->ant);
 	vs->ant = NULL;
+	SDL_FreeSurface(vs->textSurface);
+	vs->textSurface = NULL;
 }
 
 void	free_vs(t_vis_tools **vs)
@@ -48,6 +50,7 @@ void	free_vs(t_vis_tools **vs)
 		DESTROY_TXTR((*vs)->room_texture);
 		DESTROY_TXTR((*vs)->room_middle);
 		DESTROY_TXTR((*vs)->room_start_end);
+		DESTROY_TXTR(((*vs)->text));
 //		DESTROY_TXTR((*vs)->lem_in);
 //		DESTROY_TXTR((*vs)->bg);
 		TTF_CloseFont((*vs)->font);

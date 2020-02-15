@@ -38,6 +38,7 @@ typedef struct		s_ant
 {
     int				ant_index;
     t_type			type;
+    t_room			*st_room;
     t_room			*room;
     struct s_ant	*next;
 }					t_ant;
@@ -64,11 +65,13 @@ typedef struct		s_input
 	int				ants_num;
 	int				rooms_num;
 	t_room			*room;
+	char			*st_room;
 	t_link			*link;
 	int				start_room;
 	int 			end_room;
 	uint8_t			flag;
 	t_iteration		*iteration;
+	int				iter_num;
 }					t_input;
 
 /*

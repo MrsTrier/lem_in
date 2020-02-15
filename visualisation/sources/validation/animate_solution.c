@@ -21,6 +21,26 @@ void	placerooms(t_input data, t_sizes *sizes)
 	rects_for_room(data, sizes);
 }
 
+void	display_titles(t_input data, t_sizes *sizes, t_vis_tools *vs)
+{
+	SDL_Color textColor = { 255, 255, 255, 0 };
+	vs->font = TTF_OpenFont("/Users/mcanhand/Downloads/oswald/font.ttf", 16);
+	if(!vs->font) {
+		printf("TTF_OpenFont: %s\n", TTF_GetError());
+		// handle error
+	}
+	while (data.room != NULL)
+	{
+		vs->textSurface = TTF_RenderText_Solid(vs->font, data.room->name, textColor);
+		vs->text = SDL_CreateTextureFromSurface(vs->renderer, vs->textSurface);
+		int text_width = vs->textSurface->w;
+		int text_height = vs->textSurface->h;
+		SDL_Rect renderQuad = { data.room->x, data.room->y - (sizes->room_hight / 4), text_width, text_height };
+		SDL_RenderCopy(vs->renderer, vs->text, NULL, &renderQuad);
+		data.room = data.room->next;
+	}
+}
+
 void	animate_solution(t_input data, t_vis_tools *vs)
 {
 	bool		quit;
@@ -44,6 +64,7 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 				display_links(data, &sizes, vs);
 				display_rooms(data, &sizes, vs);
 				display_ants(&data, i, vs, &sizes);
+				display_titles(data, &sizes, vs);
 				i++;
 				SDL_RenderPresent(vs->renderer);
 				SDL_Delay(1000 / 1);

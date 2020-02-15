@@ -44,6 +44,8 @@ void		initialize_vars(t_input *input, int *i, char ***objs, char *line)
 	input->flag = 0b01100000;
 	input->room = NULL;
 	input->link = NULL;
+	input->iteration = NULL;
+	input->iter_num = 0;
 }
 
 void		is_input_corect(t_input *input)

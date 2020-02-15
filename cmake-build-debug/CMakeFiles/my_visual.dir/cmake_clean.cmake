@@ -86,6 +86,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/main.c.o"
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/read_fd.c.o"
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/read_validate.c.o"
+  "CMakeFiles/my_visual.dir/visualisation/sources/validation/save_iter.c.o"
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/save_link.c.o"
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/save_room.c.o"
   "CMakeFiles/my_visual.dir/visualisation/sources/validation/validate_result.c.o"

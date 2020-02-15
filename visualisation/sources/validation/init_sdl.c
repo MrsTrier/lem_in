@@ -14,6 +14,11 @@ bool	init_sdl_images()
 		printf( "Could not initialize SDL_image! SDL_Error: %s\n", IMG_GetError() );
 		success = false;
 	}
+	if (TTF_Init() == -1)
+	{
+		printf("TTF_Init: %s\n", TTF_GetError());
+		success = false;
+	}
 	return success;
 }
 

@@ -2,8 +2,6 @@
 # include "visualization.h"
 # include <stdio.h>
 
-
-
 void	keep_w_to_h_ratio(t_sizes *sizes)
 {
 	bool status;
@@ -43,12 +41,6 @@ void	convert_coords(t_sizes *sizes, t_room *room)
 
 void	calc_rooms_size(t_sizes *sizes)
 {
-	int free_space_w;
-	int free_space_h;
-
-	free_space_w = 0;
-	free_space_w = 0;
-//	free_space_w = sizes->screen_w - sizes->bounds * 2;
 	sizes->room_width = sizes->screen_w / (sizes->cels_num_w + 1);
 	sizes->space_w = sizes->room_width / 5;
 	sizes->bounds = sizes->room_width / 3;
@@ -63,12 +55,4 @@ void	calc_rooms_size(t_sizes *sizes)
 			(sizes->space_h * sizes->cels_num_h) )/ (sizes->cels_num_h + 1);
 	sizes->space_h = sizes->room_hight / 4;
 	keep_w_to_h_ratio(sizes);
-//	sizes->room_width = free_space_w / (sizes->cels_num_w + 1);
-//	sizes->space_w = sizes->room_width / 3;
-//	sizes->room_width = (free_space_w - (sizes->space_w * sizes->cels_num_w)) / (sizes->cels_num_w + 1);
-//	free_space_h = sizes->screen_h - sizes->bounds * 2;
-//	sizes->room_hight = free_space_h / (sizes->cels_num_h + 1);
-//	sizes->space_h = sizes->room_hight / 3;
-//	sizes->room_hight = (free_space_h - (sizes->space_h * sizes->cels_num_h)) / (sizes->cels_num_h + 1);
-//	keep_w_to_h_ratio(sizes);
 }

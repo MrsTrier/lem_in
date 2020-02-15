@@ -40,6 +40,8 @@ typedef struct		s_vis_tools
 	t_bool			ants_is_moving;
 	int				x_shift;
 	int				y_shift;
+	SDL_Surface		*textSurface;
+	SDL_Texture		*text;
 }					t_vis_tools;
 
 
@@ -60,6 +62,7 @@ typedef struct		s_sizes
 	int				min_x;
 	int				ant_w;
 	int				ant_h;
+	int				move;
 }					t_sizes;
 
 
@@ -84,5 +87,8 @@ bool				init_surface(t_vis_tools *vs);
 void				animate_solution(t_input data, t_vis_tools *vs);
 
 void				calc_additional_metrics(t_sizes *sizes);
+
+void				save_iteration(t_iteration **iter, t_iteration *new_iter);
+
 
 #endif

@@ -16,6 +16,7 @@ t_room		*create_room(char *line, t_input *data, char ***objs)
 		room->type = FIRST;
 		data->flag &= ~START;
 		data->start_room = 1;
+		data->st_room = room->name;
 	}
 	if (data->flag & END)
 	{
