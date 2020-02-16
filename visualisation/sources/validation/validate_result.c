@@ -63,6 +63,7 @@ t_iteration		*create_iteration(t_input *data, char *line)
 		ant = (t_ant *)malloc(sizeof(t_ant));
 		ant->ant_index = ft_atoi(steps[0] + 1);
 		ant->room = find_room(data, steps[1]);
+		ant->move = 1;
 		push_new_ant(&iter, ant);
         iter->ants_num += 1;
         i++;
@@ -93,38 +94,6 @@ void	is_res_right(char *res, t_input *data)
 	free(objs);
 }
 
-//void	adit_ant(t_iteration **iter, t_input *data)//нужно сохранять комнату откуда муравей перебегает
-//{
-//	t_iteration	**head;
-//	t_iteration	*pr;
-//	t_room		*prev_room;
-//
-//	pr = *iter;
-//	head = iter;
-//	if (*head)
-//	{
-//		while (pr->next != NULL)
-//		{
-//			if (!pr->index)
-//				pr->ant->st_room = find_room(data, data->st_room);
-//			else
-//				{}
-//			prev_room = pr->ant
-//			pr = pr->next;
-//		}
-//	}
-//	if (!*head)
-//	{
-//		*head = new_iter;
-//		(*head)->next = NULL;
-//	}
-//	else
-//	{
-//		pr->next = new_iter;
-//		new_iter->index += 1;
-//		pr->next->next = NULL;
-//	}
-//}
 
 void	validate_result(char *res, t_input *data)
 {
@@ -139,7 +108,6 @@ void	validate_result(char *res, t_input *data)
 		is_res_right(objs[i], data);
 		iter = create_iteration(data, objs[i]);
 		save_iteration(&(data->iteration), iter);
-//		adit_ant(&(data->iteration), data);
 		data->iter_num += 1;
 		i++;
     }

@@ -42,6 +42,7 @@ typedef struct		s_vis_tools
 	int				y_shift;
 	SDL_Surface		*textSurface;
 	SDL_Texture		*text;
+	int				strt_displayed;
 }					t_vis_tools;
 
 
@@ -62,7 +63,6 @@ typedef struct		s_sizes
 	int				min_x;
 	int				ant_w;
 	int				ant_h;
-	int				move;
 }					t_sizes;
 
 

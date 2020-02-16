@@ -41,6 +41,7 @@ typedef struct		s_ant
     t_room			*st_room;
     t_room			*room;
     struct s_ant	*next;
+	int				move;
 }					t_ant;
 
 typedef struct		s_iter

@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mcanhand/my_visual/visualisation/cmake-build-debug"/>
+				<Option working_dir="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mcanhand/my_visual/visualisation/cmake-build-debug"/>
+				<Option working_dir="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mcanhand/my_visual/visualisation/cmake-build-debug"/>
+				<Option working_dir="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="visualisation">
-				<Option output="/Users/mcanhand/my_visual/visualisation/cmake-build-debug/visualisation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mcanhand/my_visual/visualisation/cmake-build-debug"/>
+				<Option output="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/visualisation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mcanhand/my_visual/visualisation/includes"/>
-					<Add directory="/Users/mcanhand/my_visual/visualisation/libft/includes"/>
+					<Add directory="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes"/>
+					<Add directory="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/includes"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2.framework/Headers"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers"/>
@@ -57,21 +57,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 visualisation"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 visualisation"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="visualisation/fast">
-				<Option output="/Users/mcanhand/my_visual/visualisation/cmake-build-debug/visualisation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mcanhand/my_visual/visualisation/cmake-build-debug"/>
+				<Option output="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/visualisation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mcanhand/my_visual/visualisation/includes"/>
-					<Add directory="/Users/mcanhand/my_visual/visualisation/libft/includes"/>
+					<Add directory="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes"/>
+					<Add directory="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/includes"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2.framework/Headers"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers"/>
@@ -83,296 +83,305 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 visualisation/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/my_visual/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 visualisation/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/includes/errors.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/errors.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/includes/validation.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/validation.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/includes/visualization.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/visualization.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_any.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_any.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_atoi.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_atoi.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_bzero.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_bzero.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_count_if.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_count_if.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_create_elem.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_create_elem.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_freetwodarr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_freetwodarr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_isalnum.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_isalnum.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_isalpha.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_isalpha.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_isascii.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_isascii.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_isdigit.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_isdigit.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_isprint.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_isprint.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_itoa.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_itoa.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_list_at.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_list_at.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstadd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstadd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstdel.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstdel.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstdelone.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstdelone.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstiter.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstiter.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstmap.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstmap.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_lstnew.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_lstnew.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memalloc.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memalloc.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memccpy.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memccpy.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memchr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memchr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memcmp.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memcmp.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memcpy.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memcpy.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memdel.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memdel.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memmove.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memmove.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_memset.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_memset.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putchar.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putchar.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putchar_fd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putendl.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putendl.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putendl_fd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putnbr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putnbr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putnbr_fd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putstr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putstr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_putstr_fd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_reverse.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_reverse.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strcat.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strcat.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strchr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strchr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strclr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strclr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strcmp.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strcmp.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strcpy.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strcpy.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strdel.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strdel.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strdup.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strdup.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strequ.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strequ.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_striter.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_striter.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_striteri.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_striteri.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strjoin.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strjoin.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strlcat.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strlcat.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strlen.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strlen.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strmap.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strmap.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strmapi.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strmapi.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strncat.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strncat.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strncmp.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strncmp.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strncpy.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strncpy.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strnequ.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strnequ.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strnew.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strnew.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strnstr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strnstr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strrchr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strrchr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strsplit.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strsplit.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strstr.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strstr.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strsub.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strsub.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_strtrim.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_strtrim.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_tolower.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_tolower.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/ft_toupper.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_toupper.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/get_next_line.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/get_next_line.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/includes/get_next_line.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/includes/get_next_line.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/includes/libft.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/includes/libft.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/libft/is_int.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/is_int.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/calc_sizes.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/animate_solution.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/check_for_ant.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/check_for_link.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_sizes.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/check_for_room.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_ant.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/check_for_type.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_link.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_ants.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_room.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_links.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_type.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/display_rooms.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_cels_num.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_iter.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/find_room.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_cels_num.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/free_funcs.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_iter.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/helper.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_room.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/init_sdl.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/free_funcs.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/init_srfcandtxtrs.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/helper.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/is_objtype.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_sdl.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/main.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_srfcandtxtrs.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/read_fd.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/is_objtype.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/read_validate.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/main.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/save_link.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_fd.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/save_room.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_validate.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/validate_result.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_iter.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/sources/validation/validation.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_link.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/my_visual/visualisation/CMakeLists.txt">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_room.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validate_result.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validation.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

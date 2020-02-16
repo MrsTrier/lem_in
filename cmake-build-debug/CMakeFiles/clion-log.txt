@@ -1,4 +1,1 @@
-/Users/mcanhand/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mcanhand/my_visual
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/mcanhand/my_visual/cmake-build-debug
+CMakeLists.txt not found in /Users/mcanhand/leeeeeeeeeeeemin/cmake-build-debug Select CMakeLists.txt file...

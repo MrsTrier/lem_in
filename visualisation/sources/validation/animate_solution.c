@@ -41,6 +41,24 @@ void	display_titles(t_input data, t_sizes *sizes, t_vis_tools *vs)
 	}
 }
 
+void	zero_ant(t_input *data)
+{
+	t_ant		*pr_ant;
+	t_iteration	*current;
+
+	current = data->iteration;
+	while (current)
+	{
+		pr_ant = current->ant;
+		while (pr_ant)
+		{
+			pr_ant->move = 1;
+			pr_ant= pr_ant->next;
+		}
+		current = current->next;
+	}
+}
+
 void	animate_solution(t_input data, t_vis_tools *vs)
 {
 	bool		quit;
@@ -65,7 +83,11 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 				display_rooms(data, &sizes, vs);
 				display_ants(&data, i, vs, &sizes);
 				display_titles(data, &sizes, vs);
-				i++;
+				if (data.iteration->ant->move == 6)
+				{
+					zero_ant(&data);
+					i++;
+				}
 				SDL_RenderPresent(vs->renderer);
 				SDL_Delay(1000 / 1);
 				while (SDL_PollEvent(&e) != 0)

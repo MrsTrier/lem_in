@@ -22,6 +22,7 @@ t_vis_tools		*create_vs(void)
 	vs->welcome = true;
 	vs->close = false;
 	vs->ants_is_moving = false;
+	vs->strt_displayed = 0;
 //	vs->x_shift = 0;
 //	vs->y_shift = 0;
 	return (vs);
