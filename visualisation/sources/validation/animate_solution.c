@@ -65,6 +65,7 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 	SDL_Event	e;
 	t_sizes		sizes;
 	int			i;
+	t_iteration	*iter;
 
 	i = 0;
 	if (!init(vs, &sizes))
@@ -77,16 +78,18 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 		{
 			quit = 0;
 			placerooms(data, &sizes);
-			while (!quit)
-			{
+			while (!quit) {
 				display_links(data, &sizes, vs);
 				display_rooms(data, &sizes, vs);
 				display_ants(&data, i, vs, &sizes);
 				display_titles(data, &sizes, vs);
-				if (data.iteration->ant->move == 6)
+				iter = find_iter(&data, i);
+				if (iter)
 				{
-					zero_ant(&data);
-					i++;
+					if (iter->ant->move == 6) {
+						zero_ant(&data);
+						i++;
+					}
 				}
 				SDL_RenderPresent(vs->renderer);
 				SDL_Delay(1000 / 1);

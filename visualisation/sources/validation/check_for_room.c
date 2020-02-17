@@ -23,6 +23,7 @@ t_room		*create_room(char *line, t_input *data, char ***objs)
 		room->type = LAST;
 		data->flag &= ~END;
 		data->end_room = 1;
+		data->nd_room = room->name;
 	}
 	data->rooms_num += 1;
 	return (room);

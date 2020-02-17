@@ -29,6 +29,7 @@ typedef struct		s_vis_tools
 	TTF_Font		*font;
 	SDL_Texture		*bg;
 	SDL_Rect		*bg_dims;
+	SDL_Rect		ant_dstrect;
 	SDL_Texture		*lem_in;
 	SDL_Texture		*room_start_end;
 	SDL_Texture		*room_middle;

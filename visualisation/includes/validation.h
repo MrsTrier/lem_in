@@ -67,6 +67,7 @@ typedef struct		s_input
 	int				rooms_num;
 	t_room			*room;
 	char			*st_room;
+	char			*nd_room;
 	t_link			*link;
 	int				start_room;
 	int 			end_room;
