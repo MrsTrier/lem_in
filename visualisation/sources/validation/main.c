@@ -73,7 +73,7 @@ int			main(int ac, char **av)
 	t_input		data;
 	t_vis_tools	*vs;
 
-	if (ac == 1)
+	if (ac == 1 && av[1] == NULL)
 	{
 		vs = create_vs();
 		read_validate(&res, &data);
@@ -81,6 +81,7 @@ int			main(int ac, char **av)
 		free_vs(&vs);
 		free_room(&data);
 		free_links(&data);
+		free_iter(&data);
 	}
 	return (0);
 }

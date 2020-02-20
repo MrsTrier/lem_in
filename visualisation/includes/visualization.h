@@ -79,6 +79,8 @@ void				display_rooms(t_input data, t_sizes *sizes, t_vis_tools *vs);
 
 t_iteration			*find_iter(t_input *input, int index);
 
+t_ant				*find_ant(t_iteration *iteration, int index);
+
 void				find_cels_num(t_sizes *sizes, t_input data);
 
 bool				init(t_vis_tools *vs, t_sizes *sizes);

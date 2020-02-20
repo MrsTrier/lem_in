@@ -27,22 +27,32 @@ SOURCES_DIRECTORY = ./sources/validation/
 # LI_SOURCES_LIST = lem_in.c
 # LI_SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(LI_SOURCES_LIST))
 
-VS_SOURCES_LIST = check_for_ant.c\
-				  check_for_link.c\
-				  check_for_room.c\
-				  check_for_type.c\
-				  free_funcs.c\
-				  helper.c\
-				  is_objtype.c\
-				  save_link.c\
-				  save_room.c\
-				  main.c\
-				  validation.c\
-				  read_fd.c\
-				  read_validate.c\
-  				  validate_result.c\
-  				  calc_sizes.c\
-
+VS_SOURCES_LIST = animate_solution.c\
+                  calc_additional_metrics.c\
+                  calc_sizes.c\
+                  check_for_ant.c\
+                  check_for_link.c\
+                  check_for_room.c\
+                  check_for_type.c\
+                  display_ants.c\
+                  display_links.c\
+                  display_rooms.c\
+                  find_cels_num.c\
+                  find_iter.c\
+                  find_room.c\
+                  free_funcs.c\
+                  helper.c\
+                  init_sdl.c\
+                  init_srfcandtxtrs.c\
+                  is_objtype.c\
+                  main.c\
+                  read_fd.c\
+                  read_validate.c\
+                  save_iter.c\
+                  save_link.c\
+                  save_room.c\
+                  validate_result.c\
+                  validation.c\
 
 VS_SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(VS_SOURCES_LIST))
 

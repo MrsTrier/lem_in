@@ -39,7 +39,8 @@ typedef struct		s_ant
     int				ant_index;
     t_type			type;
     t_room			*st_room;
-    t_room			*room;
+	t_room			*cur_room;
+	t_room			*room;
     struct s_ant	*next;
 	int				move;
 }					t_ant;
@@ -63,6 +64,8 @@ typedef struct		s_link
 
 typedef struct		s_input
 {
+	int				onstart;
+	int				atend;
 	int				ants_num;
 	int				rooms_num;
 	t_room			*room;
@@ -91,7 +94,7 @@ bool				is_comment(char *line);
  * Functions to free allocated memory
  */
 void				free_room(t_input *input);
-void				free_rooms(t_input *input);
+void				free_iter(t_input *input);
 void				free_links(t_input *input);
 void				free_mem(char **objs, t_input *data);
 

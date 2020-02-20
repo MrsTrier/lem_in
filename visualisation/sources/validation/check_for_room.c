@@ -7,6 +7,7 @@ t_room		*create_room(char *line, t_input *data, char ***objs)
 
 	*objs = ft_strsplit(line, ' ');
 	room = (t_room *)malloc(sizeof(t_room));
+	room->type = MIDDLE;
 	room->next = NULL;
 	room->name = ft_strdup((*objs)[0]);
 	room->x = ft_atoi((*objs)[1]);
