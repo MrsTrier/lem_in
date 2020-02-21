@@ -99,11 +99,11 @@ void	split_input(char **map, char **res)
 		error_found(ERR_INPUT);
 }
 
-void	read_validate(char **res, t_input *data)
+void	read_validate(char **res, t_input *data, int fd)
 {
-	char *map;
+	char	*map;
 
-	map = read_fd(0);
+	map = read_fd(fd);
 	if (map != NULL)
 	{
 		split_input(&map, res);

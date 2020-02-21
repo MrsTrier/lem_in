@@ -16,9 +16,9 @@ bool	init_surface(t_vis_tools *vs)
 	boolean_t	success;
 
 	success = true;
-	vs->background = IMG_Load("/Users/mcanhand/Downloads/space.jpg");
-	vs->rooms = IMG_Load("/Users/mcanhand/Downloads/room.png");
-	vs->ant = IMG_Load("/Users/mcanhand/Downloads/ant.png");
+	vs->background = IMG_Load("/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/space.jpg");
+	vs->rooms = IMG_Load("/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/room.png");
+	vs->ant = IMG_Load("/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/ant.png");
 	if (vs->rooms == NULL)
 	{
 		printf("Unable to load image %s! SDL Error: %s\n", "03_event_driven_programming/x.bmp", SDL_GetError());

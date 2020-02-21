@@ -14,12 +14,28 @@ bool	init_sdl_images()
 		printf( "Could not initialize SDL_image! SDL_Error: %s\n", IMG_GetError() );
 		success = false;
 	}
-	if (TTF_Init() == -1)
-	{
-		printf("TTF_Init: %s\n", TTF_GetError());
-		success = false;
-	}
 	return success;
+}
+
+
+
+bool	init_font(t_vis_tools *vs)
+{
+	bool	success;
+
+	success = false;
+	if (TTF_Init() == -1)
+		printf("TTF_Init: %s\n", TTF_GetError());
+	else
+	{
+		vs->font = TTF_OpenFont("/Users/mcanhand/Downloads/oswald/font.ttf", 16);
+		if(!vs->font)
+			printf("TTF_OpenFont: %s\n", TTF_GetError());
+		else
+			success = true;
+		// handle error
+	}
+	return (success);
 }
 
 bool	init(t_vis_tools *vs, t_sizes *sizes)
@@ -29,7 +45,7 @@ bool	init(t_vis_tools *vs, t_sizes *sizes)
     sizes->screen_h = 1080;
     sizes->screen_w = 1940;
 	success = true;
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
 		printf( "SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
 		success = false;
@@ -45,6 +61,8 @@ bool	init(t_vis_tools *vs, t_sizes *sizes)
 		}
 	}
 	if (!init_sdl_images())
+		success = false;
+	if (!init_font(vs))
 		success = false;
 	return success;
 }

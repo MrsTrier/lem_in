@@ -1,16 +1,16 @@
 #ifndef VISUALIZATION_H
 # define VISUALIZATION_H
-//#include <SDL2/SDL.h>
-//#include <mach/machine.h>
-//#include <SDL2/SDL_image.h>
-//#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL.h>
+#include <mach/machine.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 # define DESTROY_TXTR(X)	if (X) SDL_DestroyTexture(X);
 
-#include <SDL.h>
-#include <mach/machine.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+//#include <SDL.h>
+//#include <mach/machine.h>
+//#include <SDL_image.h>
+//#include <SDL_ttf.h>
 # include "validation.h"
 # include "errors.h"
 
@@ -18,31 +18,27 @@
 
 typedef struct		s_vis_tools
 {
+	int				speed;
+	SDL_Color		textColor;
 	SDL_Window		*window;
 	SDL_Renderer	*renderer;
 	SDL_Surface		*background;
 	SDL_Surface		*rooms;
 	SDL_Surface		*ant;
-    SDL_Texture		*ant_texture;
+	SDL_Surface		*textSurface;
+	SDL_Texture		*ant_texture;
     SDL_Texture		*room_texture;
 	SDL_Texture		*background_texture;
 	TTF_Font		*font;
-	SDL_Texture		*bg;
-	SDL_Rect		*bg_dims;
 	SDL_Rect		ant_dstrect;
-	SDL_Texture		*lem_in;
 	SDL_Texture		*room_start_end;
 	SDL_Texture		*room_middle;
-//	SDL_Texture		*press_space;
-//	SDL_Texture		*reload;
 	SDL_Texture		*next;
-	t_bool			welcome;
-	t_bool			close;
-	t_bool			ants_is_moving;
-	int				x_shift;
-	int				y_shift;
-	SDL_Surface		*textSurface;
 	SDL_Texture		*text;
+	SDL_Surface		*stTextSurface;
+	SDL_Texture		*stText;
+	SDL_Surface		*ndTextSurface;
+	SDL_Texture		*ndText;
 	int				strt_displayed;
 }					t_vis_tools;
 

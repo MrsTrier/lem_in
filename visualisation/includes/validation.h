@@ -155,7 +155,7 @@ char				*read_fd(int fd);
 /*
  * read_validate.c
  */
-void				read_validate(char **res, t_input *data);
+void				read_validate(char **res, t_input *data, int fd); //delete fd
 
 /*
  * validate_result.c

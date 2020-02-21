@@ -3,6 +3,7 @@
 # include "errors.h"
 # include "visualization.h"
 
+# include <fcntl.h>
 t_vis_tools		*create_vs(void)
 {
 	t_vis_tools	*vs;
@@ -12,19 +13,16 @@ t_vis_tools		*create_vs(void)
 	vs->window = NULL;
 	vs->renderer = NULL;
 	vs->font = NULL;
-	vs->bg = NULL;
-	vs->bg_dims = NULL;
-	vs->lem_in = NULL;
 	vs->room_start_end = NULL;
 	vs->room_middle = NULL;
 	vs->ant = NULL;
 	vs->next = NULL;
-	vs->welcome = true;
-	vs->close = false;
-	vs->ants_is_moving = false;
 	vs->strt_displayed = 0;
-//	vs->x_shift = 0;
-//	vs->y_shift = 0;
+	vs->textColor.r = 225;
+	vs->textColor.g = 225;
+	vs->textColor.b = 225;
+	vs->textColor.a = 0;
+	vs->speed = 500;
 	return (vs);
 }
 
@@ -36,8 +34,6 @@ void	free_surface(t_vis_tools *vs)
 	vs->rooms = NULL;
 	SDL_FreeSurface(vs->ant);
 	vs->ant = NULL;
-	SDL_FreeSurface(vs->textSurface);
-	vs->textSurface = NULL;
 }
 
 void	free_vs(t_vis_tools **vs)
@@ -51,9 +47,6 @@ void	free_vs(t_vis_tools **vs)
 		DESTROY_TXTR((*vs)->room_texture);
 		DESTROY_TXTR((*vs)->room_middle);
 		DESTROY_TXTR((*vs)->room_start_end);
-		DESTROY_TXTR(((*vs)->text));
-//		DESTROY_TXTR((*vs)->lem_in);
-//		DESTROY_TXTR((*vs)->bg);
 		TTF_CloseFont((*vs)->font);
 		if ((*vs)->renderer)
 			SDL_DestroyRenderer((*vs)->renderer);
@@ -72,11 +65,13 @@ int			main(int ac, char **av)
 	char		*res;
 	t_input		data;
 	t_vis_tools	*vs;
+	int		fd;
 
-	if (ac == 1 && av[1] == NULL)
+	fd = open(av[1], O_RDONLY);
+	if (ac == 2)
 	{
 		vs = create_vs();
-		read_validate(&res, &data);
+		read_validate(&res, &data, fd);
 		animate_solution(data, vs);
 		free_vs(&vs);
 		free_room(&data);

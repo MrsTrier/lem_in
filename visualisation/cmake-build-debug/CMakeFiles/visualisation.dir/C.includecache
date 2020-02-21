@@ -688,19 +688,11 @@ begin_code.h
 close_code.h
 /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/close_code.h
 
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/main.c
+/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_srfcandtxtrs.c
 validation.h
 /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validation.h
 errors.h
 /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/errors.h
 visualization.h
 /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/visualization.h
-
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_validate.c
-validation.h
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validation.h
-errors.h
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/errors.h
-stdio.h
--
 
