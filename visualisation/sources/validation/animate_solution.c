@@ -2,6 +2,7 @@
 # include "validation.h"
 # include "errors.h"
 # include <stdio.h>
+#include <SDL_events.h>
 
 # include "visualization.h"
 
@@ -143,10 +144,13 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 				{
 					if (e.type == SDL_QUIT)
 						quit = 1;
-					if (e.type == SDLK_RIGHT)
-						vs->speed -= 100;
-					if (e.type == SDLK_LEFT)
-						vs->speed += 100;
+					if (e.type == SDL_KEYDOWN)
+					{
+						if (e.key.keysym.sym == SDLK_LEFT)
+							vs->speed -= 100;
+						if (e.key.keysym.sym == SDLK_RIGHT)
+							vs->speed -= 100;
+					}
 //					if (keystates[SDL_GetScancodeFromKey(SDLK_RIGHT)])
 //						vs->speed += 100;
 //					if (keystates[SDL_GetScancodeFromKey(SDLK_LEFT)])
