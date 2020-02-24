@@ -28,13 +28,13 @@ SDL_Rect	calc_dstrect(t_ant *ant, t_sizes *sizes, int pr_x, int pr_y)
 	x_shift = sizes->room_width / 2 - sizes->ant_w / 2;
 	y_shift = sizes->room_hight / 2 - sizes->ant_h / 2;
 	if (pr_x > ant->room->x)
-		step_shift = -(((pr_x - ant->room->x) / 5) * ant->move);
+		step_shift = -(((pr_x - ant->room->x) / 14) * ant->move);
 	else
-		step_shift = ((ant->room->x - pr_x) / 5) * ant->move;
+		step_shift = ((ant->room->x - pr_x) / 14) * ant->move;
 	if (pr_y > ant->room->y)
-		down_shift = -(((pr_y - ant->room->y) / 5) * ant->move);
+		down_shift = -(((pr_y - ant->room->y) / 14) * ant->move);
 	else
-		down_shift = ((ant->room->y - pr_y) / 5) * ant->move;
+		down_shift = ((ant->room->y - pr_y) / 14) * ant->move;
 	SDL_Rect ant_dstrect = {pr_x + x_shift + step_shift, pr_y + y_shift + down_shift,
 	                        sizes->ant_w, sizes->ant_h};
 	ant->type = ant->room->type;
@@ -93,7 +93,7 @@ void	display_ants(t_input *data, int index, t_vis_tools *vs, t_sizes *sizes)
 			if (iter->ant->move == 1 && iter->ant->type == FIRST && iter->ant->room->type != FIRST)
 				data->onstart--;
 			vs->ant_dstrect = calc_dstrect(iter->ant, sizes, pr_x, pr_y);
-			if (iter->ant->room->type == LAST && iter->ant->move == 6)
+			if (iter->ant->room->type == LAST && iter->ant->move == 15)
 				data->atend++;
 			SDL_RenderCopy(vs->renderer, vs->ant_texture, NULL, &vs->ant_dstrect);
 			iter->ant = iter->ant->next;
