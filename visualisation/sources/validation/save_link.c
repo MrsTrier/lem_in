@@ -6,11 +6,11 @@
 /*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 12:37:12 by mcanhand          #+#    #+#             */
-/*   Updated: 2020/02/04 12:37:16 by mcanhand         ###   ########.fr       */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "validation.h"
+#include "vis_validation.h"
 
 void		save_link(t_link **linklst, t_link *new_link)
 {

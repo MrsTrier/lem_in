@@ -262,9 +262,9 @@ CMakeFiles/visualisation.dir/libft/is_int.c.o
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/is_int.c
 CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -316,65 +316,10 @@ CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/animate_solution.c
-CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
- ../libft/includes/get_next_line.h
- ../libft/includes/libft.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
- /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c
 CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -427,33 +372,88 @@ CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_sizes.c
 CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_ant.c
 CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_link.c
 CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_room.c
 CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_type.c
+CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
+ ../libft/includes/get_next_line.h
+ ../libft/includes/libft.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+ /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/close_code.h
+ /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
+ /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
+ /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/create_iter.c
 CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -505,10 +505,10 @@ CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c
-CMakeFiles/visualisation.dir/sources/validation/display_links.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -559,11 +559,11 @@ CMakeFiles/visualisation.dir/sources/validation/display_links.c.o
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/close_code.h
  /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
- /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c
-CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_objs.c
+CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -614,11 +614,11 @@ CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/close_code.h
  /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
- /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c
+ /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_titles.c
 CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -671,80 +671,29 @@ CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_cels_num.c
 CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/mcanhand/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_iter.c
 CMakeFiles/visualisation.dir/sources/validation/find_room.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_room.c
 CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o
- ../includes/validation.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/free_funcs.c
 CMakeFiles/visualisation.dir/sources/validation/helper.c.o
- ../includes/validation.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/helper.c
 CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -797,9 +746,9 @@ CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_sdl.c
 CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -852,14 +801,14 @@ CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_srfcandtxtrs.c
 CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o
- ../includes/validation.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/is_objtype.c
 CMakeFiles/visualisation.dir/sources/validation/main.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -912,38 +861,38 @@ CMakeFiles/visualisation.dir/sources/validation/main.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/main.c
 CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_fd.c
 CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_validate.c
 CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_iter.c
 CMakeFiles/visualisation.dir/sources/validation/save_link.c.o
- ../includes/validation.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_link.c
 CMakeFiles/visualisation.dir/sources/validation/save_room.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_room.c
 CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o
- ../includes/errors.h
- ../includes/validation.h
- ../includes/visualization.h
+ ../includes/vis.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/Library/Frameworks/SDL2.framework/Headers/SDL.h
@@ -996,8 +945,8 @@ CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o
  /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validate_result.c
 CMakeFiles/visualisation.dir/sources/validation/validation.c.o
- ../includes/errors.h
- ../includes/validation.h
+ ../includes/vis_errors.h
+ ../includes/vis_validation.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validation.c

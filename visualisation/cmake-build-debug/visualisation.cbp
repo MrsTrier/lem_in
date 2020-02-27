@@ -90,13 +90,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/errors.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/vis.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/validation.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/vis_errors.h">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/visualization.h">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/includes/vis_validation.h">
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/libft/ft_any.c">
@@ -306,9 +306,6 @@
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/animate_solution.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c">
-			<Option target="visualisation"/>
-		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_sizes.c">
 			<Option target="visualisation"/>
 		</Unit>
@@ -324,13 +321,16 @@
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_type.c">
 			<Option target="visualisation"/>
 		</Unit>
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/create_iter.c">
+			<Option target="visualisation"/>
+		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_objs.c">
 			<Option target="visualisation"/>
 		</Unit>
-		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c">
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_titles.c">
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_cels_num.c">
@@ -340,6 +340,9 @@
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_room.c">
+			<Option target="visualisation"/>
+		</Unit>
+		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/font.ttf">
 			<Option target="visualisation"/>
 		</Unit>
 		<Unit filename="/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/free_funcs.c">

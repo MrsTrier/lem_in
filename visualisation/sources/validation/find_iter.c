@@ -1,7 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   find_iter.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:20:43 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
-# include "visualization.h"
+#include "vis_validation.h"
 
 t_iteration		*find_iter(t_input *input, int index)
 {

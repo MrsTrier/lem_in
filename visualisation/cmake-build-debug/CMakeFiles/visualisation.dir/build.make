@@ -928,22 +928,9 @@ CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/animate_solution.c -o CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.s
 
-CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o: CMakeFiles/visualisation.dir/flags.make
-CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o: ../sources/validation/calc_additional_metrics.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c
-
-CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c > CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.i
-
-CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_additional_metrics.c -o CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.s
-
 CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o: ../sources/validation/calc_sizes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/calc_sizes.c
 
 CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.i: cmake_force
@@ -956,7 +943,7 @@ CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o: ../sources/validation/check_for_ant.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_ant.c
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.i: cmake_force
@@ -969,7 +956,7 @@ CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o: ../sources/validation/check_for_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_link.c
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.i: cmake_force
@@ -982,7 +969,7 @@ CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o: ../sources/validation/check_for_room.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_room.c
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.i: cmake_force
@@ -995,7 +982,7 @@ CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o: ../sources/validation/check_for_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/check_for_type.c
 
 CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.i: cmake_force
@@ -1008,7 +995,7 @@ CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o: ../sources/validation/display_ants.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c
 
 CMakeFiles/visualisation.dir/sources/validation/display_ants.c.i: cmake_force
@@ -1019,35 +1006,9 @@ CMakeFiles/visualisation.dir/sources/validation/display_ants.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/display_ants.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c -o CMakeFiles/visualisation.dir/sources/validation/display_ants.c.s
 
-CMakeFiles/visualisation.dir/sources/validation/display_links.c.o: CMakeFiles/visualisation.dir/flags.make
-CMakeFiles/visualisation.dir/sources/validation/display_links.c.o: ../sources/validation/display_links.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_links.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/display_links.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c
-
-CMakeFiles/visualisation.dir/sources/validation/display_links.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/display_links.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c > CMakeFiles/visualisation.dir/sources/validation/display_links.c.i
-
-CMakeFiles/visualisation.dir/sources/validation/display_links.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/display_links.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_links.c -o CMakeFiles/visualisation.dir/sources/validation/display_links.c.s
-
-CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o: CMakeFiles/visualisation.dir/flags.make
-CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o: ../sources/validation/display_rooms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c
-
-CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c > CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.i
-
-CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_rooms.c -o CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.s
-
 CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o: ../sources/validation/find_cels_num.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_cels_num.c
 
 CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.i: cmake_force
@@ -1060,7 +1021,7 @@ CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o: ../sources/validation/find_iter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_iter.c
 
 CMakeFiles/visualisation.dir/sources/validation/find_iter.c.i: cmake_force
@@ -1073,7 +1034,7 @@ CMakeFiles/visualisation.dir/sources/validation/find_iter.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/find_room.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/find_room.c.o: ../sources/validation/find_room.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_room.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/visualisation.dir/sources/validation/find_room.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/find_room.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/find_room.c
 
 CMakeFiles/visualisation.dir/sources/validation/find_room.c.i: cmake_force
@@ -1086,7 +1047,7 @@ CMakeFiles/visualisation.dir/sources/validation/find_room.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o: ../sources/validation/free_funcs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/free_funcs.c
 
 CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.i: cmake_force
@@ -1099,7 +1060,7 @@ CMakeFiles/visualisation.dir/sources/validation/free_funcs.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/helper.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/helper.c.o: ../sources/validation/helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/visualisation.dir/sources/validation/helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/visualisation.dir/sources/validation/helper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/helper.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/helper.c
 
 CMakeFiles/visualisation.dir/sources/validation/helper.c.i: cmake_force
@@ -1112,7 +1073,7 @@ CMakeFiles/visualisation.dir/sources/validation/helper.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o: ../sources/validation/init_sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_sdl.c
 
 CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.i: cmake_force
@@ -1125,7 +1086,7 @@ CMakeFiles/visualisation.dir/sources/validation/init_sdl.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o: ../sources/validation/init_srfcandtxtrs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/init_srfcandtxtrs.c
 
 CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.i: cmake_force
@@ -1138,7 +1099,7 @@ CMakeFiles/visualisation.dir/sources/validation/init_srfcandtxtrs.c.s: cmake_for
 
 CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o: ../sources/validation/is_objtype.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/is_objtype.c
 
 CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.i: cmake_force
@@ -1151,7 +1112,7 @@ CMakeFiles/visualisation.dir/sources/validation/is_objtype.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/main.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/main.c.o: ../sources/validation/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/visualisation.dir/sources/validation/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/visualisation.dir/sources/validation/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/main.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/main.c
 
 CMakeFiles/visualisation.dir/sources/validation/main.c.i: cmake_force
@@ -1164,7 +1125,7 @@ CMakeFiles/visualisation.dir/sources/validation/main.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o: ../sources/validation/read_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/read_fd.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_fd.c
 
 CMakeFiles/visualisation.dir/sources/validation/read_fd.c.i: cmake_force
@@ -1177,7 +1138,7 @@ CMakeFiles/visualisation.dir/sources/validation/read_fd.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o: ../sources/validation/read_validate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/read_validate.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/read_validate.c
 
 CMakeFiles/visualisation.dir/sources/validation/read_validate.c.i: cmake_force
@@ -1190,7 +1151,7 @@ CMakeFiles/visualisation.dir/sources/validation/read_validate.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o: ../sources/validation/save_iter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_iter.c
 
 CMakeFiles/visualisation.dir/sources/validation/save_iter.c.i: cmake_force
@@ -1203,7 +1164,7 @@ CMakeFiles/visualisation.dir/sources/validation/save_iter.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/save_link.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/save_link.c.o: ../sources/validation/save_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_link.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_link.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/save_link.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_link.c
 
 CMakeFiles/visualisation.dir/sources/validation/save_link.c.i: cmake_force
@@ -1216,7 +1177,7 @@ CMakeFiles/visualisation.dir/sources/validation/save_link.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/save_room.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/save_room.c.o: ../sources/validation/save_room.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_room.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/visualisation.dir/sources/validation/save_room.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/save_room.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/save_room.c
 
 CMakeFiles/visualisation.dir/sources/validation/save_room.c.i: cmake_force
@@ -1229,7 +1190,7 @@ CMakeFiles/visualisation.dir/sources/validation/save_room.c.s: cmake_force
 
 CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o: ../sources/validation/validate_result.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validate_result.c
 
 CMakeFiles/visualisation.dir/sources/validation/validate_result.c.i: cmake_force
@@ -1239,6 +1200,45 @@ CMakeFiles/visualisation.dir/sources/validation/validate_result.c.i: cmake_force
 CMakeFiles/visualisation.dir/sources/validation/validate_result.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/validate_result.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validate_result.c -o CMakeFiles/visualisation.dir/sources/validation/validate_result.c.s
+
+CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o: CMakeFiles/visualisation.dir/flags.make
+CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o: ../sources/validation/create_iter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/create_iter.c
+
+CMakeFiles/visualisation.dir/sources/validation/create_iter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/create_iter.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/create_iter.c > CMakeFiles/visualisation.dir/sources/validation/create_iter.c.i
+
+CMakeFiles/visualisation.dir/sources/validation/create_iter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/create_iter.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/create_iter.c -o CMakeFiles/visualisation.dir/sources/validation/create_iter.c.s
+
+CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o: CMakeFiles/visualisation.dir/flags.make
+CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o: ../sources/validation/display_objs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_objs.c
+
+CMakeFiles/visualisation.dir/sources/validation/display_objs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/display_objs.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_objs.c > CMakeFiles/visualisation.dir/sources/validation/display_objs.c.i
+
+CMakeFiles/visualisation.dir/sources/validation/display_objs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/display_objs.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_objs.c -o CMakeFiles/visualisation.dir/sources/validation/display_objs.c.s
+
+CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o: CMakeFiles/visualisation.dir/flags.make
+CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o: ../sources/validation/display_titles.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mcanhand/leeeeeeeeeeeemin/visualisation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o   -c /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_titles.c
+
+CMakeFiles/visualisation.dir/sources/validation/display_titles.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/visualisation.dir/sources/validation/display_titles.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_titles.c > CMakeFiles/visualisation.dir/sources/validation/display_titles.c.i
+
+CMakeFiles/visualisation.dir/sources/validation/display_titles.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/visualisation.dir/sources/validation/display_titles.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_titles.c -o CMakeFiles/visualisation.dir/sources/validation/display_titles.c.s
 
 CMakeFiles/visualisation.dir/sources/validation/validation.c.o: CMakeFiles/visualisation.dir/flags.make
 CMakeFiles/visualisation.dir/sources/validation/validation.c.o: ../sources/validation/validation.c
@@ -1322,15 +1322,12 @@ visualisation_OBJECTS = \
 "CMakeFiles/visualisation.dir/libft/get_next_line.c.o" \
 "CMakeFiles/visualisation.dir/libft/is_int.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.o" \
-"CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o" \
-"CMakeFiles/visualisation.dir/sources/validation/display_links.c.o" \
-"CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/find_room.c.o" \
@@ -1346,6 +1343,9 @@ visualisation_OBJECTS = \
 "CMakeFiles/visualisation.dir/sources/validation/save_link.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/save_room.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o" \
+"CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o" \
+"CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o" \
+"CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o" \
 "CMakeFiles/visualisation.dir/sources/validation/validation.c.o"
 
 # External object files for target visualisation
@@ -1418,15 +1418,12 @@ visualisation: CMakeFiles/visualisation.dir/libft/ft_toupper.c.o
 visualisation: CMakeFiles/visualisation.dir/libft/get_next_line.c.o
 visualisation: CMakeFiles/visualisation.dir/libft/is_int.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.o
-visualisation: CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/calc_sizes.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/check_for_ant.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/check_for_link.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/check_for_room.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/display_ants.c.o
-visualisation: CMakeFiles/visualisation.dir/sources/validation/display_links.c.o
-visualisation: CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/find_cels_num.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/find_iter.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/find_room.c.o
@@ -1442,6 +1439,9 @@ visualisation: CMakeFiles/visualisation.dir/sources/validation/save_iter.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/save_link.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/save_room.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/validate_result.c.o
+visualisation: CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o
+visualisation: CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o
+visualisation: CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o
 visualisation: CMakeFiles/visualisation.dir/sources/validation/validation.c.o
 visualisation: CMakeFiles/visualisation.dir/build.make
 visualisation: CMakeFiles/visualisation.dir/link.txt

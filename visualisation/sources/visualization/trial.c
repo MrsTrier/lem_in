@@ -1,4 +1,4 @@
-# include "visualization.h"
+# include "vis.h"
 
 
 //Screen dimension constants

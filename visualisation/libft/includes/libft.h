@@ -61,7 +61,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void				free_arr(char **arr);
+void				ft_free_strsplit(char **arr);
 int					ft_atoi(const char *str);
 int					ft_isdigit(int c);
 int					ft_isascii(int c);

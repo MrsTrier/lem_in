@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "validation.h"
+#include "vis_validation.h"
 
 void	free_room(t_input *input)
 {
@@ -64,7 +64,7 @@ void	free_links(t_input *input)
 
 void	free_mem(char **objs, t_input *data)
 {
-	free_arr(objs);
+	ft_free_strsplit(objs);
 	free(objs);
 	free_room(data);
 	free_links(data);

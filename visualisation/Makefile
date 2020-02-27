@@ -28,15 +28,15 @@ SOURCES_DIRECTORY = ./sources/validation/
 # LI_SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(LI_SOURCES_LIST))
 
 VS_SOURCES_LIST = animate_solution.c\
-                  calc_additional_metrics.c\
+                  create_iter.c\
                   calc_sizes.c\
                   check_for_ant.c\
                   check_for_link.c\
                   check_for_room.c\
                   check_for_type.c\
+                  display_titles.c\
                   display_ants.c\
-                  display_links.c\
-                  display_rooms.c\
+                  display_objs.c\
                   find_cels_num.c\
                   find_iter.c\
                   find_room.c\

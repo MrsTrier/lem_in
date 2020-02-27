@@ -1,8 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   find_cels_num.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:20:38 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
-# include <stdio.h>
-# include "visualization.h"
+#include "vis_validation.h"
+#include "vis.h"
 
 int		find_max_coord(t_input data, char c)
 {
@@ -42,10 +51,8 @@ void	find_cels_num(t_sizes *sizes, t_input data)
 	sizes->max_x = find_max_coord(data, 'x');
 	sizes->min_y = find_min_coord(data, 'y');
 	sizes->min_x = find_min_coord(data, 'x');
-	sizes->cels_num_w = (sizes->max_x < 0) ? -(sizes->max_x - (-1 * sizes->min_x)) : sizes->max_x - sizes->min_x;
-	sizes->cels_num_h = (sizes->max_y < 0) ? -(sizes->max_y - (-1 * sizes->min_y)) : sizes->max_y - sizes->min_y;
-	printf("\nMIN X ---> %d\nMIN Y ---> %d\n", sizes->min_x, sizes->min_y);
-	printf("\nMAX X ---> %d\nMAX Y ---> %d\n", sizes->max_x, sizes->max_y);
-	printf("\nCels num in horizontal ---> %d\n", sizes->cels_num_w);
-	printf("\nCels num in vertical ---> %d\n", sizes->cels_num_h);
+	sizes->cels_num_w = (sizes->max_x < 0) ?
+			-(sizes->max_x - (-1 * sizes->min_x)) : sizes->max_x - sizes->min_x;
+	sizes->cels_num_h = (sizes->max_y < 0) ?
+			-(sizes->max_y - (-1 * sizes->min_y)) : sizes->max_y - sizes->min_y;
 }

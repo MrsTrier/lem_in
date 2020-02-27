@@ -120,6 +120,7 @@ void				save_link(t_link **linklst, t_link *new_link);
  * validation.c
  */
 bool				room_exists(t_room *roomlst, char *name);
+void				is_input_corect(t_input *input);
 bool				duplicated_coords(t_room *roomlst, int x, int y);
 
 /*
@@ -151,6 +152,8 @@ void				check_for_link(char *input, t_input *data, char ***objs);
  * read_fd.c
  */
 char				*read_fd(int fd);
+
+t_iteration			*create_iteration(t_input *data, char *line);
 
 /*
  * read_validate.c

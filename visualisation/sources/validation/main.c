@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:21:23 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
-# include "visualization.h"
+#include "vis_validation.h"
+#include "vis_errors.h"
+#include "vis.h"
+#include <fcntl.h>
 
-# include <fcntl.h>
 t_vis_tools		*create_vs(void)
 {
 	t_vis_tools	*vs;
@@ -11,7 +22,7 @@ t_vis_tools		*create_vs(void)
 	if (!(vs = (t_vis_tools *)ft_memalloc(sizeof(t_vis_tools))))
 		error_found(ERR_VS_INIT);
 	vs->window = NULL;
-	vs->renderer = NULL;
+	vs->render = NULL;
 	vs->font = NULL;
 	vs->room_start_end = NULL;
 	vs->room_middle = NULL;
@@ -26,30 +37,30 @@ t_vis_tools		*create_vs(void)
 	return (vs);
 }
 
-void	free_surface(t_vis_tools *vs)
+void			free_surface(t_vis_tools *vs)
 {
-	SDL_FreeSurface(vs->background);
-	vs->background = NULL;
+	SDL_FreeSurface(vs->backgrnd);
+	vs->backgrnd = NULL;
 	SDL_FreeSurface(vs->rooms);
 	vs->rooms = NULL;
 	SDL_FreeSurface(vs->ant);
 	vs->ant = NULL;
 }
 
-void	free_vs(t_vis_tools **vs)
+void			free_vs(t_vis_tools **vs)
 {
 	if (vs && *vs)
 	{
 		free_surface(*vs);
 		DESTROY_TXTR((*vs)->next);
-		DESTROY_TXTR((*vs)->ant_texture);
-		DESTROY_TXTR((*vs)->background_texture);
+		DESTROY_TXTR((*vs)->ant_txtr);
+		DESTROY_TXTR((*vs)->backgrnd_txtr);
 		DESTROY_TXTR((*vs)->room_texture);
 		DESTROY_TXTR((*vs)->room_middle);
 		DESTROY_TXTR((*vs)->room_start_end);
 		TTF_CloseFont((*vs)->font);
-		if ((*vs)->renderer)
-			SDL_DestroyRenderer((*vs)->renderer);
+		if ((*vs)->render)
+			SDL_DestroyRenderer((*vs)->render);
 		if ((*vs)->window)
 			SDL_DestroyWindow((*vs)->window);
 		TTF_Quit();
@@ -60,12 +71,12 @@ void	free_vs(t_vis_tools **vs)
 	}
 }
 
-int			main(int ac, char **av)
+int				main(int ac, char **av)
 {
 	char		*res;
 	t_input		data;
 	t_vis_tools	*vs;
-	int		fd;
+	int			fd;
 
 	fd = open(av[1], O_RDONLY);
 	if (ac == 2)

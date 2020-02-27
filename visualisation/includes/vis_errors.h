@@ -38,7 +38,7 @@
 # define ERR_ROOM_READ			"ERROR: Can\'t parse room"
 # define ERR_ROOM_NAME_DUP		"ERROR: Input has room name duplicate"
 # define ERR_ROOM_COORDS_DUP	"ERROR: Input has room coordinates duplicate"
-# define ERR_START_END_ROOM		"ERROR: Input has no start or end room"
+# define ERR_START_END_ROOM		"ERROR: Input has mistakes in start or end room coordinates"
 
 # define ERR_LINK_WITH_NO_ROOM	"ERROR: Can\'t create link with room which doesn't exist"
 # define ERR_LINK_INIT			"ERROR: Can\'t initialize link"
@@ -59,8 +59,6 @@
 //# define ERR_QUEUE_INIT			"ERROR: Can\'t initialize queue"
 
 # define ERR_PATH_INIT			"ERROR: Can\'t initialize path"
-# define ERR_NO_PATH			"ERROR: Input has no path from start to end"
-
 /*
 ** Visualizer message
 */

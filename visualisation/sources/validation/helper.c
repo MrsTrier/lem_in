@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "validation.h"
+#include "vis_validation.h"
 #include <errno.h>
 
-int		count_objs(char	**objs)
+int		count_objs(char **objs)
 {
-	int 	obj_index;
+	int obj_index;
 
 	obj_index = 0;
 	while (*objs != NULL)
@@ -37,9 +37,10 @@ void	putendl_fd(char *s, int fd)
 
 void	error_found(char *s)
 {
-	if (errno == 0)
-		putendl_fd(s, 2);
-	else
-		perror(s);
+	if (s)
+	{
+		write(2, s, ft_strlen(s));
+		write(2, "\n", 1);
+	}
 	exit(1);
 }

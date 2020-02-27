@@ -6,17 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../includes/errors.h
-
-../includes/validation.h
-libft.h
-../includes/libft.h
-stdio.h
--
-stdbool.h
--
-
-../includes/visualization.h
+../includes/vis.h
 SDL.h
 -
 mach/machine.h
@@ -25,10 +15,20 @@ SDL_image.h
 -
 SDL_ttf.h
 -
-validation.h
-../includes/validation.h
-errors.h
-../includes/errors.h
+vis_validation.h
+../includes/vis_validation.h
+vis_errors.h
+../includes/vis_errors.h
+
+../includes/vis_errors.h
+
+../includes/vis_validation.h
+libft.h
+../includes/libft.h
+stdio.h
+-
+stdbool.h
+-
 
 ../libft/includes/get_next_line.h
 libft.h
@@ -688,15 +688,11 @@ begin_code.h
 close_code.h
 /Users/mcanhand/Library/Frameworks/SDL2_ttf.framework/Headers/close_code.h
 
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/animate_solution.c
-validation.h
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/validation.h
-errors.h
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/errors.h
-stdio.h
--
-SDL_events.h
--
-visualization.h
-/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/visualization.h
+/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/display_ants.c
+vis_validation.h
+/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/vis_validation.h
+vis_errors.h
+/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/vis_errors.h
+vis.h
+/Users/mcanhand/leeeeeeeeeeeemin/visualisation/sources/validation/vis.h
 

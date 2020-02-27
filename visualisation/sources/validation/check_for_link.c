@@ -1,7 +1,19 @@
-# include "validation.h"
-# include "errors.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_for_link.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:20:10 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-bool	is_valid_objs(char *line, t_input *input)
+#include "vis_validation.h"
+#include "vis_errors.h"
+
+bool		is_valid_objs(char *line, t_input *input)
 {
 	char	**objs;
 	char	*porobably_start;
@@ -17,7 +29,7 @@ bool	is_valid_objs(char *line, t_input *input)
 		res = false;
 	if (!ft_strcmp(porobably_start, porobably_end))
 		res = false;
-	free_arr(objs);
+	ft_free_strsplit(objs);
 	free(objs);
 	return (res);
 }
@@ -35,7 +47,7 @@ t_link		*create_link(t_room *start, t_room *end)
 	return (link);
 }
 
-bool	link_exists(t_link *linklst, t_link *new_link)
+bool		link_exists(t_link *linklst, t_link *new_link)
 {
 	if (linklst)
 	{
@@ -44,20 +56,20 @@ bool	link_exists(t_link *linklst, t_link *new_link)
 			if ((linklst->start->name == new_link->start->name &&
 				linklst->end->name == new_link->end->name) ||
 					(linklst->start->name == new_link->end->name &&
-					 linklst->end->name == new_link->start->name))
+					linklst->end->name == new_link->start->name))
 				return (true);
 			linklst = linklst->next;
 		}
 		if ((linklst->start->name == new_link->start->name &&
-			 linklst->end->name == new_link->end->name) ||
+			linklst->end->name == new_link->end->name) ||
 			(linklst->start->name == new_link->end->name &&
-			 linklst->end->name == new_link->start->name))
+			linklst->end->name == new_link->start->name))
 			return (true);
 	}
 	return (false);
 }
 
-void	check_for_link(char *input, t_input *data, char ***objs)
+void		check_for_link(char *input, t_input *data, char ***objs)
 {
 	t_link	*link;
 	t_room	*start;

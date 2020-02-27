@@ -6,15 +6,22 @@
 /*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 12:37:34 by mcanhand          #+#    #+#             */
-/*   Updated: 2020/02/04 12:37:36 by mcanhand         ###   ########.fr       */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
-# include <stdio.h>
+#include "vis_validation.h"
+#include "vis_errors.h"
 
-bool		room_exists(t_room *roomlst, char *name)
+void	is_input_corect(t_input *input)
+{
+	if ((input->start_room < 0) || (input->end_room < 0))
+		error_found(ERR_START_END_ROOM);
+	if (!(input->flag & LINK))
+		error_found(ERR_NO_LINKS);
+}
+
+bool	room_exists(t_room *roomlst, char *name)
 {
 	if (roomlst)
 	{
@@ -32,7 +39,6 @@ bool		room_exists(t_room *roomlst, char *name)
 
 bool	duplicated_coords(t_room *roomlst, int x, int y)
 {
-
 	if (roomlst)
 	{
 		while (roomlst->next != NULL)
@@ -45,5 +51,4 @@ bool	duplicated_coords(t_room *roomlst, int x, int y)
 			return (true);
 	}
 	return (false);
-
 }

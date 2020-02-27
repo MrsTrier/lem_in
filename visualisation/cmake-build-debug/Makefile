@@ -1932,33 +1932,6 @@ sources/validation/animate_solution.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/animate_solution.c.s
 .PHONY : sources/validation/animate_solution.c.s
 
-sources/validation/calc_additional_metrics.o: sources/validation/calc_additional_metrics.c.o
-
-.PHONY : sources/validation/calc_additional_metrics.o
-
-# target to build an object file
-sources/validation/calc_additional_metrics.c.o:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.o
-.PHONY : sources/validation/calc_additional_metrics.c.o
-
-sources/validation/calc_additional_metrics.i: sources/validation/calc_additional_metrics.c.i
-
-.PHONY : sources/validation/calc_additional_metrics.i
-
-# target to preprocess a source file
-sources/validation/calc_additional_metrics.c.i:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.i
-.PHONY : sources/validation/calc_additional_metrics.c.i
-
-sources/validation/calc_additional_metrics.s: sources/validation/calc_additional_metrics.c.s
-
-.PHONY : sources/validation/calc_additional_metrics.s
-
-# target to generate assembly for a file
-sources/validation/calc_additional_metrics.c.s:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/calc_additional_metrics.c.s
-.PHONY : sources/validation/calc_additional_metrics.c.s
-
 sources/validation/calc_sizes.o: sources/validation/calc_sizes.c.o
 
 .PHONY : sources/validation/calc_sizes.o
@@ -2094,6 +2067,33 @@ sources/validation/check_for_type.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/check_for_type.c.s
 .PHONY : sources/validation/check_for_type.c.s
 
+sources/validation/create_iter.o: sources/validation/create_iter.c.o
+
+.PHONY : sources/validation/create_iter.o
+
+# target to build an object file
+sources/validation/create_iter.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/create_iter.c.o
+.PHONY : sources/validation/create_iter.c.o
+
+sources/validation/create_iter.i: sources/validation/create_iter.c.i
+
+.PHONY : sources/validation/create_iter.i
+
+# target to preprocess a source file
+sources/validation/create_iter.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/create_iter.c.i
+.PHONY : sources/validation/create_iter.c.i
+
+sources/validation/create_iter.s: sources/validation/create_iter.c.s
+
+.PHONY : sources/validation/create_iter.s
+
+# target to generate assembly for a file
+sources/validation/create_iter.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/create_iter.c.s
+.PHONY : sources/validation/create_iter.c.s
+
 sources/validation/display_ants.o: sources/validation/display_ants.c.o
 
 .PHONY : sources/validation/display_ants.o
@@ -2121,59 +2121,59 @@ sources/validation/display_ants.c.s:
 	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_ants.c.s
 .PHONY : sources/validation/display_ants.c.s
 
-sources/validation/display_links.o: sources/validation/display_links.c.o
+sources/validation/display_objs.o: sources/validation/display_objs.c.o
 
-.PHONY : sources/validation/display_links.o
-
-# target to build an object file
-sources/validation/display_links.c.o:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.o
-.PHONY : sources/validation/display_links.c.o
-
-sources/validation/display_links.i: sources/validation/display_links.c.i
-
-.PHONY : sources/validation/display_links.i
-
-# target to preprocess a source file
-sources/validation/display_links.c.i:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.i
-.PHONY : sources/validation/display_links.c.i
-
-sources/validation/display_links.s: sources/validation/display_links.c.s
-
-.PHONY : sources/validation/display_links.s
-
-# target to generate assembly for a file
-sources/validation/display_links.c.s:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_links.c.s
-.PHONY : sources/validation/display_links.c.s
-
-sources/validation/display_rooms.o: sources/validation/display_rooms.c.o
-
-.PHONY : sources/validation/display_rooms.o
+.PHONY : sources/validation/display_objs.o
 
 # target to build an object file
-sources/validation/display_rooms.c.o:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.o
-.PHONY : sources/validation/display_rooms.c.o
+sources/validation/display_objs.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_objs.c.o
+.PHONY : sources/validation/display_objs.c.o
 
-sources/validation/display_rooms.i: sources/validation/display_rooms.c.i
+sources/validation/display_objs.i: sources/validation/display_objs.c.i
 
-.PHONY : sources/validation/display_rooms.i
+.PHONY : sources/validation/display_objs.i
 
 # target to preprocess a source file
-sources/validation/display_rooms.c.i:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.i
-.PHONY : sources/validation/display_rooms.c.i
+sources/validation/display_objs.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_objs.c.i
+.PHONY : sources/validation/display_objs.c.i
 
-sources/validation/display_rooms.s: sources/validation/display_rooms.c.s
+sources/validation/display_objs.s: sources/validation/display_objs.c.s
 
-.PHONY : sources/validation/display_rooms.s
+.PHONY : sources/validation/display_objs.s
 
 # target to generate assembly for a file
-sources/validation/display_rooms.c.s:
-	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_rooms.c.s
-.PHONY : sources/validation/display_rooms.c.s
+sources/validation/display_objs.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_objs.c.s
+.PHONY : sources/validation/display_objs.c.s
+
+sources/validation/display_titles.o: sources/validation/display_titles.c.o
+
+.PHONY : sources/validation/display_titles.o
+
+# target to build an object file
+sources/validation/display_titles.c.o:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_titles.c.o
+.PHONY : sources/validation/display_titles.c.o
+
+sources/validation/display_titles.i: sources/validation/display_titles.c.i
+
+.PHONY : sources/validation/display_titles.i
+
+# target to preprocess a source file
+sources/validation/display_titles.c.i:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_titles.c.i
+.PHONY : sources/validation/display_titles.c.i
+
+sources/validation/display_titles.s: sources/validation/display_titles.c.s
+
+.PHONY : sources/validation/display_titles.s
+
+# target to generate assembly for a file
+sources/validation/display_titles.c.s:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/sources/validation/display_titles.c.s
+.PHONY : sources/validation/display_titles.c.s
 
 sources/validation/find_cels_num.o: sources/validation/find_cels_num.c.o
 
@@ -2817,9 +2817,6 @@ help:
 	@echo "... sources/validation/animate_solution.o"
 	@echo "... sources/validation/animate_solution.i"
 	@echo "... sources/validation/animate_solution.s"
-	@echo "... sources/validation/calc_additional_metrics.o"
-	@echo "... sources/validation/calc_additional_metrics.i"
-	@echo "... sources/validation/calc_additional_metrics.s"
 	@echo "... sources/validation/calc_sizes.o"
 	@echo "... sources/validation/calc_sizes.i"
 	@echo "... sources/validation/calc_sizes.s"
@@ -2835,15 +2832,18 @@ help:
 	@echo "... sources/validation/check_for_type.o"
 	@echo "... sources/validation/check_for_type.i"
 	@echo "... sources/validation/check_for_type.s"
+	@echo "... sources/validation/create_iter.o"
+	@echo "... sources/validation/create_iter.i"
+	@echo "... sources/validation/create_iter.s"
 	@echo "... sources/validation/display_ants.o"
 	@echo "... sources/validation/display_ants.i"
 	@echo "... sources/validation/display_ants.s"
-	@echo "... sources/validation/display_links.o"
-	@echo "... sources/validation/display_links.i"
-	@echo "... sources/validation/display_links.s"
-	@echo "... sources/validation/display_rooms.o"
-	@echo "... sources/validation/display_rooms.i"
-	@echo "... sources/validation/display_rooms.s"
+	@echo "... sources/validation/display_objs.o"
+	@echo "... sources/validation/display_objs.i"
+	@echo "... sources/validation/display_objs.s"
+	@echo "... sources/validation/display_titles.o"
+	@echo "... sources/validation/display_titles.i"
+	@echo "... sources/validation/display_titles.s"
 	@echo "... sources/validation/find_cels_num.o"
 	@echo "... sources/validation/find_cels_num.i"
 	@echo "... sources/validation/find_cels_num.s"

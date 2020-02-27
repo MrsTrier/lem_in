@@ -1,18 +1,18 @@
 #ifndef VISUALIZATION_H
 # define VISUALIZATION_H
-//#include <SDL2/SDL.h>
-//#include <mach/machine.h>
-//#include <SDL2/SDL_image.h>
-//#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL.h>
+#include <mach/machine.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 # define DESTROY_TXTR(X)	if (X) SDL_DestroyTexture(X);
 
-#include <SDL.h>
-#include <mach/machine.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
-# include "validation.h"
-# include "errors.h"
+//#include <SDL.h>
+//#include <mach/machine.h>
+//#include <SDL_image.h>
+//#include <SDL_ttf.h>
+# include "vis_validation.h"
+# include "vis_errors.h"
 
 
 
@@ -21,22 +21,22 @@ typedef struct		s_vis_tools
 	int				speed;
 	SDL_Color		textColor;
 	SDL_Window		*window;
-	SDL_Renderer	*renderer;
-	SDL_Surface		*background;
+	SDL_Renderer	*render;
+	SDL_Surface		*backgrnd;
 	SDL_Surface		*rooms;
 	SDL_Surface		*ant;
 	SDL_Surface		*textSurface;
-	SDL_Texture		*ant_texture;
+	SDL_Texture		*ant_txtr;
     SDL_Texture		*room_texture;
-	SDL_Texture		*background_texture;
+	SDL_Texture		*backgrnd_txtr;
 	TTF_Font		*font;
-	SDL_Rect		ant_dstrect;
+	SDL_Rect		ant_rect;
 	SDL_Texture		*room_start_end;
 	SDL_Texture		*room_middle;
 	SDL_Texture		*next;
 	SDL_Texture		*text;
-	SDL_Surface		*stTextSurface;
-	SDL_Texture		*stText;
+	SDL_Surface		*antnbSurface;
+	SDL_Texture		*antnb;
 	SDL_Surface		*ndTextSurface;
 	SDL_Texture		*ndText;
 	int				strt_displayed;
@@ -67,11 +67,11 @@ void				calc_rooms_size(t_sizes *sizes);
 
 void				convert_coords(t_sizes *sizes, t_room *room);
 
-void				display_links(t_input data, t_sizes *sizes, t_vis_tools *vs);
-
 void				display_ants(t_input *data, int index, t_vis_tools *vs, t_sizes *sizes);
 
-void				display_rooms(t_input data, t_sizes *sizes, t_vis_tools *vs);
+void				display_titles(t_input data, t_sizes *sizes, t_vis_tools *vs);
+
+void				display_objs(t_input *data, t_sizes *sizes, t_vis_tools *vs, int *i);
 
 t_iteration			*find_iter(t_input *input, int index);
 
@@ -84,8 +84,6 @@ bool				init(t_vis_tools *vs, t_sizes *sizes);
 bool				init_surface(t_vis_tools *vs);
 
 void				animate_solution(t_input data, t_vis_tools *vs);
-
-void				calc_additional_metrics(t_sizes *sizes);
 
 void				save_iteration(t_iteration **iter, t_iteration *new_iter);
 

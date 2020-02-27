@@ -1,10 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   animate_solution.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:19:35 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
-# include <stdio.h>
-#include <SDL_events.h>
-
-# include "visualization.h"
+#include "vis_validation.h"
+#include "vis_errors.h"
+//#include <stdio.h>
+#include "vis.h"
 
 void	rects_for_room(t_input data, t_sizes *sizes)
 {
@@ -19,99 +28,23 @@ void	placerooms(t_input data, t_sizes *sizes)
 {
 	find_cels_num(sizes, data);
 	calc_rooms_size(sizes);
-	calc_additional_metrics(sizes);
+	sizes->ant_w = sizes->room_width / 3.333;
+	sizes->ant_h = sizes->ant_w / 0.7;
 	rects_for_room(data, sizes);
 }
 
-void	free_mem_font(t_vis_tools *vs)
+void	track_events(t_vis_tools *vs, SDL_Event *e, bool *quit)
 {
-	SDL_FreeSurface(vs->textSurface);
-	vs->textSurface = NULL;
-	SDL_FreeSurface(vs->ndTextSurface);
-	vs->ndTextSurface = NULL;
-	SDL_FreeSurface(vs->stTextSurface);
-	vs->stTextSurface = NULL;
-	DESTROY_TXTR((vs->text));
-	DESTROY_TXTR(vs->stText);
-	DESTROY_TXTR(vs->ndText);
-}
-
-void	print_room_type(t_vis_tools *vs, t_sizes *sizes, int text_width, t_input data)
-{
-	int		text_w;
-	int		text_h;
-
-	vs->stTextSurface = TTF_RenderText_Solid(vs->font, ft_itoa(data.onstart), vs->textColor);
-	vs->stText = SDL_CreateTextureFromSurface(vs->renderer, vs->stTextSurface);
-	text_w = vs->stTextSurface->w;
-	text_h = vs->stTextSurface->h;
-	if (data.room->type == FIRST)
+	while (SDL_PollEvent(&(*e)) != 0)
 	{
-		SDL_Rect renderstQuad = {data.room->x + sizes->room_width, data.room->y + sizes->room_hight + 2, text_w, text_h};
-		SDL_RenderCopy(vs->renderer, vs->stText, NULL, &renderstQuad);
-	}
-	vs->ndTextSurface = TTF_RenderText_Solid(vs->font, ft_itoa(data.atend), vs->textColor);
-	vs->ndText = SDL_CreateTextureFromSurface(vs->renderer, vs->ndTextSurface);
-	text_w = vs->ndTextSurface->w;
-	text_h = vs->ndTextSurface->h;
-	if (data.room->type == LAST)
-	{
-		SDL_Rect renderndQuad = { data.room->x + sizes->room_width, data.room->y + sizes->room_hight + 2, text_w, text_h };
-		SDL_RenderCopy(vs->renderer, vs->ndText, NULL, &renderndQuad);
-	}
-}
-
-void	display_titles(t_input data, t_sizes *sizes, t_vis_tools *vs)
-{
-	int text_width;
-	int text_height;
-
-	while (data.room != NULL)
-	{
-		vs->textSurface = TTF_RenderText_Solid(vs->font, data.room->name, vs->textColor);
-		vs->text = SDL_CreateTextureFromSurface(vs->renderer, vs->textSurface);
-		text_width = vs->textSurface->w;
-		text_height = vs->textSurface->h;
-		SDL_Rect renderQuad = { data.room->x, data.room->y - (sizes->room_hight / 4), text_width, text_height };
-		SDL_RenderCopy(vs->renderer, vs->text, NULL, &renderQuad);
-		print_room_type(vs, sizes, text_width, data);
-		free_mem_font(vs);
-		data.room = data.room->next;
-	}
-}
-
-void	zero_ant(t_input *data)
-{
-	t_ant		*pr_ant;
-	t_iteration	*current;
-
-	current = data->iteration;
-	while (current)
-	{
-		pr_ant = current->ant;
-		while (pr_ant)
+		if ((*e).type == SDL_QUIT)
+			*quit = true;
+		if ((*e).type == SDL_KEYDOWN)
 		{
-			pr_ant->move = 1;
-			pr_ant= pr_ant->next;
-		}
-		current = current->next;
-	}
-}
-
-void	display_objs(t_input *data, t_sizes *sizes, t_vis_tools *vs, int *i)
-{
-	t_iteration *iter;
-
-	display_links(*data, sizes, vs);
-	display_rooms(*data, sizes, vs);
-	display_ants(data, *i, vs, sizes);
-	display_titles(*data, sizes, vs);
-	iter = find_iter(data, *i);
-	if (iter)
-	{
-		if (iter->ant->move == 15) {
-			zero_ant(data);
-			(*i)++;
+			if ((*e).key.keysym.sym == SDLK_LEFT)
+				vs->speed += 100;
+			if ((*e).key.keysym.sym == SDLK_RIGHT)
+				vs->speed -= 100;
 		}
 	}
 }
@@ -122,36 +55,24 @@ void	animate_solution(t_input data, t_vis_tools *vs)
 	SDL_Event	e;
 	t_sizes		sizes;
 	int			i;
-	const Uint8 *keystates;
 
 	i = 0;
 	if (!init(vs, &sizes))
 		error_found(ERR_INIT_SDL);
 	else
 	{
-		keystates = SDL_GetKeyboardState(NULL);
 		if (!init_surface(vs))
 			printf("Failed to load media!\n");
 		else
 		{
-			quit = 0;
+			quit = false;
 			placerooms(data, &sizes);
-			while (!quit) {
+			while (!quit)
+			{
 				display_objs(&data, &sizes, vs, &i);
-				SDL_RenderPresent(vs->renderer);
+				SDL_RenderPresent(vs->render);
 				SDL_Delay(vs->speed);
-				while (SDL_PollEvent(&e) != 0)
-				{
-					if (e.type == SDL_QUIT)
-						quit = 1;
-					if (e.type == SDL_KEYDOWN)
-					{
-						if (e.key.keysym.sym == SDLK_LEFT)
-							vs->speed += 100;
-						if (e.key.keysym.sym == SDLK_RIGHT)
-							vs->speed -= 100;
-					}
-				}
+				track_events(vs, &e, &quit);
 			}
 		}
 	}

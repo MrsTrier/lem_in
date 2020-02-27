@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	free_arr(char **arr)
+void	ft_free_strsplit(char **arr)
 {
 	while (*arr != NULL)
 	{

@@ -6,17 +6,17 @@
 /*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 12:37:34 by mcanhand          #+#    #+#             */
-/*   Updated: 2020/02/04 12:37:36 by mcanhand         ###   ########.fr       */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "validation.h"
+#include "vis_validation.h"
 
 bool	is_room(char *line)
 {
 	char	**objs;
 	bool	res;
-	int 	objs_num;
+	int		objs_num;
 
 	res = false;
 	objs = ft_strsplit(line, ' ');
@@ -34,8 +34,7 @@ bool	is_room(char *line)
 		else
 			res = true;
 	}
-	free_arr(objs);
-	free(objs);
+	ft_free_strsplit(objs);
 	return (res);
 }
 
@@ -50,8 +49,7 @@ bool	is_link(char *line)
 		objs = ft_strsplit(line, '-');
 		if (count_objs(objs) == 2)
 			res = true;
-		free_arr(objs);
-		free(objs);
+		ft_free_strsplit(objs);
 	}
 	return (res);
 }
@@ -63,11 +61,10 @@ bool	is_ant_num(char *line)
 	if (ft_strchr(line, ' '))
 		return (false);
 	ant_num = is_int(line);
-	if (ant_num)
+	if (ant_num > 0)
 		return (true);
 	return (false);
 }
-
 
 bool	is_type_of_room(char *line)
 {

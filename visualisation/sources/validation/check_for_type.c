@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_for_type.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/25 13:20:19 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/02/25 13:22:09 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-# include "validation.h"
-# include "errors.h"
+#include "vis_validation.h"
+#include "vis_errors.h"
 
 void	set_obj_flags(char *line, t_input *data)
 {
@@ -21,9 +32,9 @@ void	set_obj_flags(char *line, t_input *data)
 void	check_for_type(char *input, t_input *data)
 {
 	if ((data->flag & START) && !(data->flag & START_ROOM))
-		error_found(ERR_INPUT);
+		error_found(ERR_START_END_ROOM);
 	else if ((data->flag & END) && !(data->flag & END_ROOM))
-		error_found(ERR_INPUT);
+		error_found(ERR_START_END_ROOM);
 	else
 		set_obj_flags(input, data);
 }
