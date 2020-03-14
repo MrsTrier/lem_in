@@ -1,0 +1,27 @@
+8
+##start
+start 0 0
+##end
+end 2 2
+r1 1 0
+r2 1 1
+r3 1 2
+r4 2 0
+r5 2 1
+start-r1
+r1-r2
+r2-r3
+r1-r4
+r1-r5
+r5-end
+
+L1-r1 
+L1-r5 L2-r1 
+L1-end L2-r5 L3-r1 
+L2-end L3-r5 L4-r1 
+L3-end L4-r5 L5-r1 
+L4-end L5-r5 L6-r1 
+L5-end L6-r5 L7-r1 
+L6-end L7-r5 L8-r1 
+L7-end L8-r5 
+L8-end 
